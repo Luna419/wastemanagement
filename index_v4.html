@@ -23,14 +23,14 @@
   justify-content: space-around;
   /*border: 4px solid #52BD97;
   box-shadow: -1px 16px 26px 4px rgba(188,188,188,0.99);*/
-  padding:20px;
+  /*padding:20px;*/
 }
 
 
 .flex
 {
   display: flex;
-  justify-content: center;
+  /*justify-content: center;*/
   align-items: baseline;
 }
 
@@ -38,7 +38,7 @@
  display: block;
  width: 40px;
  height: 40px;
- background-color: #50514F;
+ background-color: #4c4799;
  margin-top: 130px;
 
 }
@@ -47,7 +47,7 @@
  display: block;
  width: 40px;
  height: 40px;
- background-color: #F25F5C;
+ background-color: #8886c6;
  margin-top:0;
  margin-bottom:0;
 }
@@ -56,21 +56,21 @@
  display: flex;
  width: 40px;
  height: 40px;
- background-color: #FFE066;
+ background-color: #acadde;
 }
 
 .color-sample4 {
  display: flex;
  width: 40px;
  height: 40px;
- background-color: #247BA0;
+ background-color: #dadaeb;
 }
 
 .color-sample5 {
  display: flex;
  width: 40px;
  height: 40px;
- background-color: #70C1B3;
+ background-color: #50514F;
 }
 
 .legende_text{
@@ -81,15 +81,13 @@
 .texte{
   font-family:"Noto Serif TC";
   font-size:1.2rem;
-  text-align: right;
+  /*text-align: right;*/
   padding:0  0.5rem;
 }
 .texte-droite
 {
   text-align: left;
 }
-
-
 
 #chartdiv,
 #chartdiv2
@@ -119,8 +117,8 @@
   vertical-align:top;
   padding:20px;
   }
-  
-  
+
+
 #graphProd {
   width: 100%;
   /*border-width: 0 1px 0 1px;
@@ -136,8 +134,9 @@
   width: 100%;
 }
 
-#legend_maps {
-  width: 35%;
+#legend_maps,
+#legend_mapsbis {
+  width: 10%;
   /*border-width: 0 1px 0 1px;
   border-style: solid;
   border-color: #52BD97;*/
@@ -146,6 +145,8 @@
   align-items: center;
   /*justify-content: space-around;*/
   margin-top:500;
+  margin-left:0;
+  margin-right:0;
 }
 
 #legend_maps img {
@@ -318,35 +319,36 @@
               <div class="legende_text flex">
                 <div class="texte"> > 50% </div>
                 <div class="color-sample1"></div>
-                <div class="texte texte-droite">  > 500 </div>
+
               </div>
 
               <div class="legende_text flex">
                 <div class="texte"> > 40% </div>
                 <div class="color-sample2"></div>
-                <div class="texte texte-droite"> > 350 </div>
+
               </div>
 
 
               <div class="legende_text flex">
                 <div class="texte"> > 20% </div>
                 <div class="color-sample3"></div>
-                <div class="texte texte-droite">  > 250 </div>
+
               </div>
 
 
               <div class="legende_text flex">
                 <div class="texte"> > 10% </div>
                 <div class="color-sample4"></div>
-                <div class="texte texte-droite">  > 150 </div>
+
               </div>
 
 
               <div class="legende_text flex">
              <div class="texte">< 10%</div>
                 <div class="color-sample5"></div>
-                <div class="texte texte-droite"> < 150 </div>
+
               </div>
+
 <br/>
               <div class="legende_text flex">
              <div class="texte">< en % des recherches   | </div>
@@ -354,6 +356,7 @@
               </div>
 
             </div>
+
 				    <div id="chartdiv2"></div>
 				  </section>
 				<section class="conteneur-cartes2">
@@ -366,16 +369,16 @@
 				    </div>
 						<div id='text_div'>
 						<p> <b>Production des déchets en Europe en 2016 : la lourde responsabilité des industries  </b><br/>
-<br/>En 2016, les ménages européens ont produit plus de 214 millions de tonnes de déchets, ajoutés à plus de 2,3 milliards de tonnes produits par les industries la même année. L’industrie est donc responsable de 90% de la production des déchets en 2016, ce qui représente plus de 10 fois la quantité de déchets générés par les ménages européens. La production totale des déchets (industrie + ménages) est relativement stable sur les 12 dernières années (2004-2016) malgré un intérêt en hausse pour les thématiques autour du  «zéro déchet ». 
+<br/>En 2016, les ménages européens ont produit plus de 214 millions de tonnes de déchets, ajoutés à plus de 2,3 milliards de tonnes produits par les industries la même année. L’industrie est donc responsable de 90% de la production des déchets en 2016, ce qui représente plus de 10 fois la quantité de déchets générés par les ménages européens. La production totale des déchets (industrie + ménages) est relativement stable sur les 12 dernières années (2004-2016) malgré un intérêt en hausse pour les thématiques autour du  «zéro déchet ».
 </p>
 				    </div>
 				  </section>
-				  
-				  <div id='clear('></div>
+
+				  <div id='clear'></div>
 
 				</section>
-							
-				
+
+
 							<section class="conteneur-cartes">
 								<div id='graphProd'>
 								  <img src="Surprod.png"></img>
@@ -384,9 +387,9 @@
 						  </section>
 								<p> <br/><br/> <b> L’Islande, le mauvais élève de l’Europe</b><br/>
 Les ménages européens produisent en moyenne 420 kg de déchets/pers/an en 2016. Les industries quant à elles produisent l’équivalent de 4 542 kg de déchets /pers/an soit un total (ménages + indus) de 4962 kg/pers/an. Ce chiffre est en très légère baisse sur les dix dernières années mais reste très préoccupant.
-Alors que les pays les plus pollueurs (en tonnes de déchets ménagers) sont l’Allemagne, l’Italie et la France (2016), on remarque qu’en terme de production de déchets/ habitant, l’Islande se présente comme le plus mauvais élève. En effet, en 2016, ce pays a produit 800 kg/habitant supplémentaire par rapport à la moyenne européenne, soit près de 4 fois plus que la France. A l’inverse, le Kosovo et la Roumanie sont les pays les moins pollueurs (en terme de kg/habitant). 
+Alors que les pays les plus pollueurs (en tonnes de déchets ménagers) sont l’Allemagne, l’Italie et la France (2016), on remarque qu’en terme de production de déchets/ habitant, l’Islande se présente comme le plus mauvais élève. En effet, en 2016, ce pays a produit 800 kg/habitant supplémentaire par rapport à la moyenne européenne, soit près de 4 fois plus que la France. A l’inverse, le Kosovo et la Roumanie sont les pays les moins pollueurs (en terme de kg/habitant).
 
-						  
+
 						  	<section class="conteneur-cartes">
 								<div id='graphProd'>
 								  <img src="ZDFrance.png"></img>
@@ -674,8 +677,14 @@ function createSeries(info_name, name, include, color, hoverColor) {
 }
 
 // première couleur "#FF4159", "#F58795"
-  var col1 = "#50514F";
+  var col1 = "#4c4799";
   var col1hov = "#8A8A8A";
+/*
+#4c4799
+  #8886c6
+#acadde
+  #dadaeb
+  #50514F*/
 
 createSeries("Slovénie", "100% des recherches", ["SI"], col1, col1hov);
 createSeries("Autriche", "90% des recherches", ["AT"], col1, col1hov);
@@ -683,10 +692,10 @@ createSeries("République tchèque", "65% des recherches", ["CZ"], col1, col1hov
 
 
 // deuxième couleur "#FFA580", "#F9D0BF"
-  var col2 = "#F25F5C";
+  var col2 = "#8886c6";
   var col2hov = "#F59391";
-  
- 
+
+
 createSeries("Irlande", "49% des recherches", ["IE"], col2, col2hov);
 createSeries("Belgique", "48% des recherches", ["BE"], col2, col2hov);
 createSeries("Allemagne", "48% des recherches", ["DE"], col2, col2hov);
@@ -694,10 +703,10 @@ createSeries("Royaume-Uni", "45% des recherches", ["GB"], col2, col2hov);
 createSeries("Finlande", "42% des recherches", ["FI"], col2, col2hov);
 
 // troisième couleur "#E5DB8D", "#F1EBC1"
-var col3 = "#FFE066";
+var col3 = "#acadde";
   var col3hov = "#FCEAA2";
-  
- 
+
+
 createSeries("Danemark", "39% des recherches", ["DK"], col3, col3hov);
 createSeries("France", "33% des recherches", ["FR"], col3, col3hov);
 createSeries("Norvège", "32% des recherches", ["NO"], col3, col3hov);
@@ -709,9 +718,9 @@ createSeries("Lituanie", "23% des recherches", ["LT"], col3, col3hov);
 
 
 // quatrième couleur "#A5CB97", "#D8F3CE"
-      var col4 = "#247BA0";
+      var col4 = "#dadaeb";
   var col4hov = "#7CD0F3";
-  
+
 createSeries("Roumanie", "15% des recherches", ["RO"], col4, col4hov);
 createSeries("Slovaquie", "14% des recherches", ["SK"], col4, col4hov);
 createSeries("Espagne", "13% des recherches", ["ES"], col4, col4hov);
@@ -719,7 +728,8 @@ createSeries("Italie", "13% des recherches", ["IT"], col4, col4hov);
 createSeries("Grèce", "10% des recherches", ["GR"], col4, col4hov);
 
 // cinquième couleur "#52BD97", "#A1ECD1"
-  var col5 = "#70C1B3";
+
+  var col5 = "#50514F";
   var col5hov = "#BAF5EB";
 createSeries("Pologne", "8% des recherches", ["PL"], col5, col5hov);
 createSeries("Bulgarie", "7% des recherches", ["BG"], col5, col5hov);
@@ -925,16 +935,19 @@ function createSeries(info_name, name, include, color, hoverColor) {
 
 //createSeries("Northern Europe", ["FI", "DK", "SE", "NO", "LT", "LV", "EE", "IS"], "#96BDC6", "#669DA6");
 //première couleur  "#FF4159", "#F58795"
-var col1bis = col1;
+var col1bis = '#d2dcd2';
 var col1bishov = col1hov;
-
+/*
+#adcead
+#8baf8b
+#5f7d5f*/
 
 createSeries("Islande", "1285 kg/habitant", ["IS"], col1bis, col1bishov);
 createSeries("Danemark", "608 kg/habitant", ["DK"], col1bis, col1bishov);
 createSeries("Pays-Bas", "502 kg/habitant", ["NL"], col1bis, col1bishov);
 
 //deuxième couleur  "#FFA580", "#F9D0BF"
-var col2bis = col2;
+var col2bis = '#adcead';
 var col2bishov = col2hov;
 
 createSeries("Italie", "497 kg/habitant", ["IT"], col2bis, col2bishov);
@@ -953,7 +966,7 @@ createSeries("Royaume-Uni", "416 kg/habitant", ["GB"],  col2bis, col2bishov);
 createSeries("Grèce", "414 kg/habitant", ["GR"],  col2bis, col2bishov);
 
 //troisième couleur  "#E5DB8D", "#F1EBC1"
-var col3bis = col3;
+var col3bis = '#8baf8b';
 var col3bishov = col3hov;
 
 createSeries("Bulgarie", "398 kg/habitant", ["BG"], col3bis, col3bishov);
@@ -963,7 +976,7 @@ createSeries("Malte", "364 kg/habitant", ["MT"], col3bis, col3bishov);
 createSeries("Turquie", "353 kg/habitant", ["TR"], col3bis, col3bishov);
 
 // quatrième couleur  "#A5CB97", "#D8F3CE"
-var col4bis = col4;
+var col4bis = '#5f7d5f';
 var col4bishov = col4hov;
 
 
@@ -978,7 +991,7 @@ createSeries("Croatie", "274 kg/habitant", ["HR"], col4bis, col4bishov);
 createSeries("Pologne", "251 kg/habitant", ["PL"], col4bis, col4bishov);
 
 //cinquième couleur "#52BD97", "#A1ECD1"
-var col5bis = col5;
+var col5bis = '#70C1B3';
 var col5bishov = col5hov;
 
 createSeries("Serbie", "225 kg/habitant", ["RS"],  col5bis, col5bishov);
