@@ -187,7 +187,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>HTML Template</title>
+	<title>Prévention des Déchets</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
@@ -250,8 +250,8 @@
 				<ul class="main-nav nav navbar-nav navbar-right">
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
-					<li><a href="#portfolio">France</a></li>
-					<li><a href="#blog">Europe</a></li>
+					<li><a href="#france">France</a></li>
+					<li><a href="#europe">Europe</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -294,7 +294,7 @@
 
 
 	<!-- Partie 1: France -->
-	<div id="portfolio" class="section md-padding bg-grey">
+	<div id="france" class="section md-padding bg-grey">
 
 		<!-- Container -->
 		<div class="container">
@@ -330,7 +330,7 @@
 
 
 	<!-- Partie 2: Europe -->
-	<div id="blog" class="section md-padding bg-grey">
+	<div id="europe" class="section md-padding bg-grey">
 
 		<!-- Container -->
 		<div class="container">
@@ -612,7 +612,7 @@
 
 					<!-- footer copyright -->
 					<div class="footer-copyright">
-						<p>Copyright © 2017. All Rights Reserved. Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+						<p>Copyright © 2019. All Rights Reserved. Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
 					</div>
 					<!-- /footer copyright -->
 
@@ -651,10 +651,14 @@
 
 </body>
 
+
+
 <script src="amcharts4/core.js"></script>
 <script src="amcharts4/maps.js"></script>
 <script src="amcharts4/geodata/region/world/europeHigh.js"></script>
 <script src="amcharts4/themes/material.js"></script>
+
+
 <!-- Chart code -->
 <script>
 // Themes begin
@@ -700,6 +704,7 @@ homeButton.insertBefore(chart.zoomControl.plusButton);
 /*
 chart.homeGeoPoint = { longitude: 10, latitude: 52 };
 */
+	
 function createSeries(info_name, name, include, color, hoverColor) {
   var series = chart.series.push(new am4maps.MapPolygonSeries());
   series.name = name;
@@ -725,8 +730,8 @@ function createSeries(info_name, name, include, color, hoverColor) {
 	var col1 = "#4c4799";
 	var col1hov = "#c4bffa";
 
-createSeries("Slovénie", "Rang: 1e - Nombre de recherches max (base 100)", ["SI"], col1, col1hov);
-createSeries("Autriche", "Rang: 2e - 90% des recherches max ", ["AT"], col1, col1hov);
+createSeries("Slovénie", "%0A Rang: 1e - base 100", ["SI"], col1, col1hov);
+createSeries("Autriche", "%0A Rang: 2e - 90% des recherches max", ["AT"], col1, col1hov);
 createSeries("République tchèque", "Rang: 3e - 65% des recherches max", ["CZ"], col1, col1hov);
 createSeries("Irlande", "Rang: 4e - 49% des recherches max", ["IE"], col1, col1hov);
 createSeries("Belgique", "Rang: 5e ex-aequo - 48% des recherches max", ["BE"], col1, col1hov);
