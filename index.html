@@ -38,7 +38,7 @@
  display: block;
  width: 40px;
  height: 40px;
- background-color: #50514F;
+ background-color: #4c4799;
  margin-top: 130px;
 
 }
@@ -47,7 +47,7 @@
  display: block;
  width: 40px;
  height: 40px;
- background-color: #F25F5C;
+ background-color: #8886c6;
  margin-top:0;
  margin-bottom:0;
 }
@@ -56,21 +56,14 @@
  display: flex;
  width: 40px;
  height: 40px;
- background-color: #FFE066;
+ background-color: #acadde;
 }
 
 .color-sample4 {
  display: flex;
  width: 40px;
  height: 40px;
- background-color: #247BA0;
-}
-
-.color-sample5 {
- display: flex;
- width: 40px;
- height: 40px;
- background-color: #70C1B3;
+ background-color: #dadaeb;
 }
 
 .legende_text{
@@ -249,8 +242,15 @@
 					<div class="col-md-10 col-md-offset-1">
 						<div class="home-content">
 							<h1 class="white-text">Projet Datastorytelling</h1>
-							<p class="white-text">Le traitement et la génération des déchets constituent un sujet de d'actualité controversé. Nombreux sont les études et les articles qui disent apporter des solutions pour responsabiliser les sociétés.
-								Ont-ils vraiment l'impact escompté ?
+							<h3 class="white-text"> "Les meilleurs déchets sont ceux que nous ne produisons pas" </h3>
+							<p class="white-text">
+								Face à la lente prise de conscience de la menace que représentent nos déchets pour la biodiversité, le sujet de leur gestion est de plus en plus médiatisé. 
+								Après la vague d’incitation au tri sélectif, la tendance du “zéro déchet” a peu à peu fait son chemin. 
+								Contrairement aux méthodes de traitement des déchets (recyclage, valorisation énergétique etc.), la prévention des déchets vise à éviter la production-même de déchets, et non plus à seulement en réduire l’impact une fois produit. 
+								<br/>
+								Développement de l’économie circulaire, simples astuces pour faire tenir ses déchets annuels dans une jarre, hausse des ventes en vrac pour réduire les emballages.., nombreuses sont les solutions apportées par les études nationales et autres articles journalistiques pour responsabiliser les individus et la société. 
+								Mais ont-elles vraiment l'impact escompté ? 
+								Sur le sujet, ne serait-il pas enfin temps de joindre l’acte à la parole? 
 							</p>
 						</div>
 					</div>
@@ -336,14 +336,14 @@
 
 
               <div class="legende_text flex">
-                <div class="texte"> > 0-5% </div>
+                <div class="texte"> 0-5% </div>
                 <div class="color-sample4"></div>
                 <div class="texte texte-droite">  > 150 </div>
               </div>
 
 <br/>
               <div class="legende_text flex">
-             <div class="texte">< en % des recherches maximales  | </div>
+             <div class="texte"> en % des recherches maximales  | </div>
                 <div class="texte texte-droite"> en kg/habitant </div>
               </div>
 
@@ -672,52 +672,52 @@ function createSeries(info_name, name, include, color, hoverColor) {
 	var col1 = "#4c4799";
 	var col1hov = "#c4bffa";
 
-createSeries("Slovénie", "Rang: 1e - recherche: base 100", ["SI"], col1, col1hov);
-createSeries("Autriche", "Rang: 2e - 90% des recherches max ", ["AT"], col1, col1hov);
-createSeries("République tchèque", "Rang: 3e - 65% des recherches max", ["CZ"], col1, col1hov);
-createSeries("Irlande", "Rang: 4e - 49% des recherches max", ["IE"], col1, col1hov);
-createSeries("Belgique", "Rang: 5e ex-aequo - 48% des recherches max", ["BE"], col1, col1hov);
-createSeries("Allemagne", "Rang: 5e ex-aequo - 48% des recherches max", ["DE"], col1, col1hov);
-createSeries("Royaume-Uni", "Rang: 7e - 45% des recherches max", ["GB"], col1, col1hov);
-createSeries("Finlande", "Rang: 8e - 42% des recherches max", ["FI"], col1, col1hov);
-createSeries("Danemark", "Rang: 9e - 39% des recherches max", ["DK"], col1, col1hov);
+createSeries("Slovénie", "Rang: 1e <br/> Nombre de recherches max (base 100)", ["SI"], col1, col1hov);
+createSeries("Autriche", "Rang: 2e <br/> 90% des recherches max ", ["AT"], col1, col1hov);
+createSeries("République tchèque", "Rang: 3e <br/> 65% des recherches max", ["CZ"], col1, col1hov);
+createSeries("Irlande", "Rang: 4e <br/> 49% des recherches max", ["IE"], col1, col1hov);
+createSeries("Belgique", "Rang: 5e ex-aequo <br/> 48% des recherches max", ["BE"], col1, col1hov);
+createSeries("Allemagne", "Rang: 5e ex-aequo <br/> 48% des recherches max", ["DE"], col1, col1hov);
+createSeries("Royaume-Uni", "Rang: 7e <br/> 45% des recherches max", ["GB"], col1, col1hov);
+createSeries("Finlande", "Rang: 8e <br/> 42% des recherches max", ["FI"], col1, col1hov);
+createSeries("Danemark", "Rang: 9e <br/> 39% des recherches max", ["DK"], col1, col1hov);
 	
 // deuxième couleur "#FFA580", "#F9D0BF"
  	var col2 = "#8886c6";
 	var col2hov = "#c4c2fa";
   
-createSeries("France", "Rang: 10e - 33% des recherches max", ["FR"], col2, col2hov);
-createSeries("Norvège", "Rang: 11e - 32% des recherches max", ["NO"], col2, col2hov);
-createSeries("Suède", "Rang: 12e ex-aequo - 27% des recherches max", ["SE"], col2, col2hov);
-createSeries("Portugal", "Rang: 12e ex-aequo - 27% des recherches max", ["PT"], col2, col2hov);
-createSeries("Croatie", "Rang: 14e - 26% des recherches max", ["HR"], col2, col2hov);
-createSeries("Pays-Bas", "Rang: 15e - 25% des recherches max", ["NL"], col2, col2hov);
-createSeries("Lituanie", "Rang: 16e - 23% des recherches max", ["LT"], col2, col2hov);
+createSeries("France", "Rang: 10e <br/> 33% des recherches max", ["FR"], col2, col2hov);
+createSeries("Norvège", "Rang: 11e <br/> 32% des recherches max", ["NO"], col2, col2hov);
+createSeries("Suède", "Rang: 12e ex-aequo <br/> 27% des recherches max", ["SE"], col2, col2hov);
+createSeries("Portugal", "Rang: 12e ex-aequo <br/> 27% des recherches max", ["PT"], col2, col2hov);
+createSeries("Croatie", "Rang: 14e <br/> 26% des recherches max", ["HR"], col2, col2hov);
+createSeries("Pays-Bas", "Rang: 15e <br/> 25% des recherches max", ["NL"], col2, col2hov);
+createSeries("Lituanie", "Rang: 16e <br/> 23% des recherches max", ["LT"], col2, col2hov);
 
 
 // troisième couleur "#E5DB8D", "#F1EBC1"
   var col3 = "#acadde";
   var col3hov = "#8080af";
   
-createSeries("Roumanie", "Rang: 17e - 15% des recherches max", ["RO"], col3, col3hov);
-createSeries("Slovaquie", "Rang: 18e - 14% des recherches max", ["SK"], col3, col3hov);
-createSeries("Espagne", "Rang: 19e ex-aequo - 13% des recherches max", ["ES"], col3, col3hov);
-createSeries("Italie", "Rang: 19e ex-aequo - 13% des recherches max", ["IT"], col3, col3hov);
-createSeries("Grèce", "Rang: 20e - 10% des recherches max", ["GR"], col3, col3hov);
-createSeries("Pologne", "Rang: 21e - 8% des recherches max", ["PL"], col3, col3hov);
-createSeries("Bulgarie", "Rang: 22e - 7% des recherches max", ["BG"], col3, col3hov);
-createSeries("Hongrie", "Rang: 23e - 6% des recherches max", ["HU"], col3, col3hov);
+createSeries("Roumanie", "Rang: 17e <br/> 15% des recherches max", ["RO"], col3, col3hov);
+createSeries("Slovaquie", "Rang: 18e <br/> 14% des recherches max", ["SK"], col3, col3hov);
+createSeries("Espagne", "Rang: 19e ex-aequo <br/> 13% des recherches max", ["ES"], col3, col3hov);
+createSeries("Italie", "Rang: 19e ex-aequo <br/> 13% des recherches max", ["IT"], col3, col3hov);
+createSeries("Grèce", "Rang: 20e <br/> 10% des recherches max", ["GR"], col3, col3hov);
+createSeries("Pologne", "Rang: 21e <br/> 8% des recherches max", ["PL"], col3, col3hov);
+createSeries("Bulgarie", "Rang: 22e <br/> 7% des recherches max", ["BG"], col3, col3hov);
+createSeries("Hongrie", "Rang: 23e <br/> 6% des recherches max", ["HU"], col3, col3hov);
 
 // quatrième couleur "#A5CB97", "#D8F3CE"
   var col4 = "#dadaeb";
   var col4hov = "#9494b9";
 
-createSeries("Turquie", "Rang: 24e - 2% des recherches max", ["TR"], col4, col4hov);
-createSeries("Estonie", "Rang: 25e et dernier - pas de recherche", ["EE"],  col4, col4hov);
-createSeries("Lettonie", "Rang: 25e et dernier - pas de recherche",["LV"], col4, col4hov);
-createSeries("Chypre", "Rang: 25e et dernier - pas de recherche", ["CY"],  col4, col4hov);
-createSeries("Malte", "Rang: 25e et dernier - pas de recherche", ["MT"], col4, col4hov);
-createSeries("Serbie", "Rang: 25e et dernier - pas de recherche", ["RS"], col4, col4hov);
+createSeries("Turquie", "Rang: 24e <br/> 2% des recherches max", ["TR"], col4, col4hov);
+createSeries("Estonie", "Rang: 25e et dernier <br/> pas de recherche", ["EE"],  col4, col4hov);
+createSeries("Lettonie", "Rang: 25e et dernier <br/> pas de recherche",["LV"], col4, col4hov);
+createSeries("Chypre", "Rang: 25e et dernier <br/> pas de recherche", ["CY"],  col4, col4hov);
+createSeries("Malte", "Rang: 25e et dernier <br/> pas de recherche", ["MT"], col4, col4hov);
+createSeries("Serbie", "Rang: 25e et dernier <br/> pas de recherche", ["RS"], col4, col4hov);
 
 
 //Unknown information
