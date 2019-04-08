@@ -36,17 +36,16 @@
 
 .color-sample1 {
  display: block;
- width: 40px;
- height: 40px;
+ width: 30px;
+ height: 30px;
  background-color: #4c4799;
  margin-top: 130px;
-
 }
 
 .color-sample2 {
  display: block;
- width: 40px;
- height: 40px;
+ width: 30px;
+ height: 30px;
  background-color: #7d7bb9;
  margin-top:0;
  margin-bottom:0;
@@ -54,17 +53,50 @@
 
 .color-sample3 {
  display: flex;
- width: 40px;
- height: 40px;
+ width: 30px;
+ height: 30px;
  background-color: #acadde;
 }
 
 .color-sample4 {
  display: flex;
- width: 40px;
- height: 40px;
+ width: 30px;
+ height: 30px;
  background-color: #dadaeb;
 }
+	
+	
+.color-sample1bis {
+ display: block;
+ width: 30px;
+ height: 30px;
+ background-color: #4c4799;
+ margin-top: 130px;
+}
+
+.color-sample2bis {
+ display: block;
+ width: 30px;
+ height: 30px;
+ background-color: #7d7bb9;
+ margin-top:0;
+ margin-bottom:0;
+}
+
+.color-sample3bis {
+ display: flex;
+ width: 30px;
+ height: 30px;
+ background-color: #acadde;
+}
+
+.color-sample4bis {
+ display: flex;
+ width: 30px;
+ height: 30px;
+ background-color: #dadaeb;
+}
+	
 
 .legende_text{
   display: flex;
@@ -77,11 +109,10 @@
   text-align: right;
   padding:0  0.5rem;
 }
-.texte-droite
-{
+	
+.texte-droite{
   text-align: left;
 }
-
 
 
 #chartdiv,
@@ -247,9 +278,9 @@
 								Face à la lente prise de conscience de la menace que représentent nos déchets pour la biodiversité, le sujet de leur gestion est de plus en plus médiatisé. 
 								Après la vague d’incitation au tri sélectif, la tendance du “zéro déchet” a peu à peu fait son chemin. 
 								Contrairement aux méthodes de traitement des déchets (recyclage, valorisation énergétique etc.), la prévention des déchets vise à éviter la production-même de déchets, et non plus à seulement en réduire l’impact une fois produit. 
-								<br/>
+								<br/><br/>
 								Développement de l’économie circulaire, simples astuces pour faire tenir ses déchets annuels dans une jarre, hausse des ventes en vrac pour réduire les emballages.., nombreuses sont les solutions apportées par les études nationales et autres articles journalistiques pour responsabiliser les individus et la société. 
-								Mais ont-elles vraiment l'impact escompté ? 
+								Mais ont-elles vraiment l'impact escompté ? <br/>
 								Sur le sujet, ne serait-il pas enfin temps de joindre l’acte à la parole? 
 							</p>
 						</div>
@@ -312,34 +343,56 @@
 				</div>
 				<!-- /Section header -->
 
-				<section class="conteneur-cartes">
+		<section class="conteneur-cartes">
 				    <div id="chartdiv"></div>
+			
             <div id='legend_maps'>
+		    
               <div class="legende_text flex">
                 <div class="texte"> > 35% </div>
                 <div class="color-sample1"></div>
-                <div class="texte texte-droite">  > 470 </div>
               </div>
 
               <div class="legende_text flex">
                 <div class="texte"> > 15% </div>
                 <div class="color-sample2"></div>
+              </div>
+
+              <div class="legende_text flex">
+                <div class="texte">  > 5% </div>
+                <div class="color-sample3"></div>
+              </div>
+
+              <div class="legende_text flex">
+                <div class="texte">  0-5% </div>
+                <div class="color-sample4"></div>
+              </div>
+		    
+		    
+<div id='legend_maps'>
+		    
+              <div class="legende_text flex">
+                <div class="color-sample1bis"></div>
+                <div class="texte texte-droite">  > 470 </div>
+              </div>
+
+              <div class="legende_text flex">
+                <div class="color-sample2bis"></div>
                 <div class="texte texte-droite"> > 400 </div>
               </div>
 
 
               <div class="legende_text flex">
-                <div class="texte">  > 5% </div>
-                <div class="color-sample3"></div>
+                <div class="color-sample3bis"></div>
                 <div class="texte texte-droite">  > 325 </div>
               </div>
 
 
               <div class="legende_text flex">
-                <div class="texte">  0-5% </div>
-                <div class="color-sample4"></div>
+                <div class="color-sample4bis"></div>
                 <div class="texte texte-droite">  > 150 </div>
               </div>
+
 
 <br/>
               <div class="legende_text flex">
