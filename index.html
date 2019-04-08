@@ -344,7 +344,7 @@
 				</div>
 				<!-- /Section header -->
 				
-				<h4> Parler ou agir, quand les tendances ne reflètent pas la réalité du terrain </h4>
+				<h4> Parler ou agir, quand les tendances ne reflètent pas nécessairement la réalité du terrain </h4>
 
 
 	<!-- Cartes -->	
@@ -356,11 +356,7 @@
 			<div class="legende_text flex">
 				<div class="texte"> > 35% </div>
 				<div class="color-sample1"></div>
-			</div>
-			
-			<div class="legende_text flex">
-			     <div class="color-sample1bis"></div>
-			     <div class="texte texte-droite">  > 470 </div>
+				<div class="texte texte-droite">  > 470 </div>
 			</div>
 
 			<div class="legende_text flex">
@@ -716,7 +712,7 @@ function createSeries(info_name, name, include, color, hoverColor) {
   series.events.on("out", out);
 
 
-  series.mapPolygons.template.tooltipText = "[bold]{series.info_name}[/] : {series.name}";
+  series.mapPolygons.template.tooltipText = "[bold]{series.info_name}[/] : \n {series.name}";
   series.mapPolygons.template.fill = am4core.color(color);
 
   var hover = series.mapPolygons.template.states.create("highlight");
@@ -730,8 +726,8 @@ function createSeries(info_name, name, include, color, hoverColor) {
 	var col1 = "#4c4799";
 	var col1hov = "#c4bffa";
 
-createSeries("Slovénie", "%0A Rang: 1e - base 100", ["SI"], col1, col1hov);
-createSeries("Autriche", "%0A Rang: 2e - 90% des recherches max", ["AT"], col1, col1hov);
+createSeries("Slovénie", "Rang: 1e - base 100", ["SI"], col1, col1hov);
+createSeries("Autriche", "Rang: 2e - 90% des recherches max", ["AT"], col1, col1hov);
 createSeries("République tchèque", "Rang: 3e - 65% des recherches max", ["CZ"], col1, col1hov);
 createSeries("Irlande", "Rang: 4e - 49% des recherches max", ["IE"], col1, col1hov);
 createSeries("Belgique", "Rang: 5e ex-aequo - 48% des recherches max", ["BE"], col1, col1hov);
@@ -961,7 +957,7 @@ function createSeries(info_name, name, include, color, hoverColor) {
   series.events.on("out", out);
 
 
-  series.mapPolygons.template.tooltipText = "[bold]{series.info_name}[/] : {series.name}";
+  series.mapPolygons.template.tooltipText = "[bold]{series.info_name}[/] : \n {series.name}";
   series.mapPolygons.template.fill = am4core.color(color);
 
   var hover = series.mapPolygons.template.states.create("highlight");
