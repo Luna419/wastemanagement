@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+.conteneur-global
+{
+  margin: 2rem; 0
+}
+
+.conteneur-cartes
+{
+  margin: 2rem 0.4rem;
+  display: flex;
+  justify-content: space-around;
+  /*border: 4px solid #52BD97;
+  box-shadow: -1px 16px 26px 4px rgba(188,188,188,0.99);*/
+}
+
+.flex
+{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.color-sample1 {
+ display: block;
+ width: 40px;
+ height: 40px;
+ background-color: #50514F;
+ margin-top: 130px;
+
+}
+
+.color-sample2 {
+ display: block;
+ width: 40px;
+ height: 40px;
+ background-color: #F25F5C;
+ margin-top:0;
+ margin-bottom:0;
+}
+
+.color-sample3 {
+ display: flex;
+ width: 40px;
+ height: 40px;
+ background-color: #FFE066;
+}
+
+.color-sample4 {
+ display: flex;
+ width: 40px;
+ height: 40px;
+ background-color: #247BA0;
+}
+
+.color-sample5 {
+ display: flex;
+ width: 40px;
+ height: 40px;
+ background-color: #70C1B3;
+ margin-left:14px;
+}
+
+.legende_text{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.texte{
+  font-family:"Noto Serif TC";
+  font-size:1.2rem;
+  text-align: right;
+  padding:0  0.5rem;
+}
+.texte-droite
+{
+  text-align: left;
+}
+
+
+
+#chartdiv,
+#chartdiv2
+ {
+  width: 40%;
+  height: 500px;
+}
+
+#graph {
+  width: 50%;
+  /*border-width: 0 1px 0 1px;
+  border-style: solid;
+  border-color: #52BD97;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#graph img {
+  width: 100%;
+}
+
+#legend_maps {
+  width: 35%;
+  /*border-width: 0 1px 0 1px;
+  border-style: solid;
+  border-color: #52BD97;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: space-around;*/
+  margin-top:500;
+}
+
+#legend_maps img {
+  width: 100%;
+}
+
+#clear {
+    clear: both;
+}
+
+
+
+</style>
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC" rel="stylesheet">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>HTML Template</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Owl Carousel -->
+	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+
+	<!-- Magnific Popup -->
+	<link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Header -->
+	<header id="home">
+		<!-- Background Image -->
+		<div class="bg-img" style="background-image: url('./img/waste.gif');">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image -->
+
+		<!-- Nav -->
+		<nav id="nav" class="navbar nav-transparent">
+			<div class="container">
+
+				<div class="navbar-header">
+					<!-- Logo -->
+					<div class="navbar-brand">
+						<a href="index.html">
+							<img class="logo" src="img/ensae.jpg" alt="ensae">
+							<img class="logo-alt" src="img/ensae_alt.png" alt="logo">
+						</a>
+					</div>
+					<!-- /Logo -->
+
+					<!-- Collapse nav button -->
+					<div class="nav-collapse">
+						<span></span>
+					</div>
+					<!-- /Collapse nav button -->
+				</div>
+
+				<!--  Main navigation  -->
+				<ul class="main-nav nav navbar-nav navbar-right">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">France</a></li>
+					<li><a href="#blog">Europe</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- /Main navigation -->
+
+			</div>
+		</nav>
+		<!-- /Nav -->
+
+		<!-- home wrapper -->
+		<div class="home-wrapper">
+			<div class="container">
+				<div class="row">
+
+					<!-- home content -->
+					<div class="col-md-10 col-md-offset-1">
+						<div class="home-content">
+							<h1 class="white-text">Projet Datastorytelling</h1>
+							<p class="white-text">Le traitement et la génération des déchets constituent un sujet de d'actualité controversé. Nombreux sont les études et les articles qui disent apporter des solutions pour responsabiliser les sociétés.
+								Ont-ils vraiment l'impact escompté ?
+							</p>
+						</div>
+					</div>
+					<!-- /home content -->
+
+				</div>
+			</div>
+		</div>
+		<!-- /home wrapper -->
+
+	</header>
+	<!-- /Header -->
+
+	<!-- Portfolio -->
+	<div id="portfolio" class="section md-padding bg-grey">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">Situation française</h2>
+				</div>
+				<!-- /Section header -->
+
+				<section class="conteneur-cartes">
+				    <div id='graph'>
+				      <img src="graph1.png"></img>
+				    </div>
+						<div id='graph'>
+				      <img src="graph2.png"></img>
+				    </div>
+				  </section>
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Portfolio -->
+
+	<!-- Blog -->
+	<div id="blog" class="section md-padding bg-grey">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">Situation Européenne</h2>
+				</div>
+				<!-- /Section header -->
+
+				<section class="conteneur-cartes">
+				    <div id="chartdiv"></div>
+            <div id='legend_maps'>
+              <div class="legende_text flex">
+                <div class="texte"> 40% des recherches</div>
+                <div class="color-sample1"></div>
+                <div class="texte texte-droite"> 17 000kg/habitant</div>
+              </div>
+
+              <div class="legende_text flex">
+                <div class="texte"> 25% des recherches</div>
+                <div class="color-sample2"></div>
+                <div class="texte texte-droite"> 10 000kg/habitant</div>
+              </div>
+
+
+              <div class="legende_text flex">
+                <div class="texte"> 20% des recherches</div>
+                <div class="color-sample3"></div>
+                <div class="texte texte-droite">  3 000 kg/habitant</div>
+              </div>
+
+
+              <div class="legende_text flex">
+                <div class="texte"> 10% des recherches</div>
+                <div class="color-sample4"></div>
+                <div class="texte texte-droite"> 2 000 kg/habitant</div>
+              </div>
+
+
+              <div class="legende_text flex">
+                <div class="color-sample5"></div>
+              </div>
+
+            </div>
+				    <div id="chartdiv2"></div>
+				  </section>
+
+				  <div id='clear'></div>
+				  <br>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere lectus tortor, quis cursus nibh finibus ac. Etiam lobortis facilisis scelerisque. Mauris sed libero semper, tincidunt libero et, volutpat lorem. Vivamus lobortis, nulla a rhoncus bibendum, lacus magna vulputate est, iaculis viverra ante nunc quis tellus. Suspendisse non ligula vitae tellus suscipit finibus at vitae quam. Vivamus elementum odio eu sapien laoreet, id semper dui eleifend. Sed risus ante, bibendum vel nisl ut, maximus dignissim libero. Maecenas ut sem elementum, tincidunt diam a, fermentum augue. Aliquam posuere purus justo, vel iaculis nisi luctus maximus. Nulla orci velit, placerat eu sapien et, laoreet congue neque. Donec id augue eget erat finibus bibendum consequat quis leo. In imperdiet justo metus, et fringilla arcu iaculis vel.</p>
+
+				</section>
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Blog -->
+
+		<!-- About -->
+		<div id="about" class="section md-padding">
+
+			<!-- Container -->
+			<div class="container">
+
+				<!-- Row -->
+				<div class="row">
+
+					<!-- Section header -->
+					<div class="section-header text-center">
+						<h2 class="title">Welcome to Website</h2>
+					</div>
+					<!-- /Section header -->
+
+					<!-- about -->
+					<div class="col-md-4">
+						<div class="about">
+							<i class="fa fa-cogs"></i>
+							<h3>Fully Customizible</h3>
+							<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
+							<a href="#">Read more</a>
+						</div>
+					</div>
+					<!-- /about -->
+
+					<!-- about -->
+					<div class="col-md-4">
+						<div class="about">
+							<i class="fa fa-magic"></i>
+							<h3>Awesome Features</h3>
+							<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
+							<a href="#">Read more</a>
+						</div>
+					</div>
+					<!-- /about -->
+
+					<!-- about -->
+					<div class="col-md-4">
+						<div class="about">
+							<i class="fa fa-mobile"></i>
+							<h3>Fully Responsive</h3>
+							<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
+							<a href="#">Read more</a>
+						</div>
+					</div>
+					<!-- /about -->
+
+				</div>
+				<!-- /Row -->
+
+			</div>
+			<!-- /Container -->
+
+		</div>
+		<!-- /About -->
+
+
+
+
+
+
+	<!-- Contact -->
+	<div id="contact" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section-header -->
+				<div class="section-header text-center">
+					<h2 class="title">A propos</h2>
+				</div>
+				<!-- /Section-header -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-phone"></i>
+						<h3>Phone</h3>
+						<p>512-421-3940</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-envelope"></i>
+						<h3>Email</h3>
+						<p>email@support.com</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-map-marker"></i>
+						<h3>Address</h3>
+						<p>1739 Bubby Drive</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact form -->
+				<div class="col-md-8 col-md-offset-2">
+					<form class="contact-form">
+						<input type="text" class="input" placeholder="Name">
+						<input type="email" class="input" placeholder="Email">
+						<input type="text" class="input" placeholder="Subject">
+						<textarea class="input" placeholder="Message"></textarea>
+						<button class="main-btn">Send message</button>
+					</form>
+				</div>
+				<!-- /contact form -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Contact -->
+
+
+	<!-- Footer -->
+	<footer id="footer" class="sm-padding bg-dark">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<!-- footer logo -->
+					<div class="footer-logo">
+						<a href="index.html"><img src="img/ensae_alt.png" alt="logo"></a>
+					</div>
+					<!-- /footer logo -->
+
+					<!-- footer follow -->
+					<ul class="footer-follow">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+					</ul>
+					<!-- /footer follow -->
+
+					<!-- footer copyright -->
+					<div class="footer-copyright">
+						<p>Copyright © 2017. All Rights Reserved. Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+					</div>
+					<!-- /footer copyright -->
+
+				</div>
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</footer>
+	<!-- /Footer -->
+
+	<!-- Back to top -->
+	<div id="back-to-top"></div>
+	<!-- /Back to top -->
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="preloader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<!-- /Preloader -->
+
+	<!-- jQuery Plugins -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+<script src="amcharts4/core.js"></script>
+<script src="amcharts4/maps.js"></script>
+<script src="amcharts4/geodata/region/world/europeHigh.js"></script>
+<script src="amcharts4/themes/material.js"></script>
+<!-- Chart code -->
+<script>
+// Themes begin
+am4core.useTheme(am4themes_material);
+// Themes end
+
+// Create map instance
+var chart = am4core.create("chartdiv", am4maps.MapChart);
+
+// Set map definition
+chart.geodata = am4geodata_region_world_europeHigh;
+
+// Set projection
+chart.projection = new am4maps.projections.Mercator();
+
+// Export
+/*
+chart.exporting.menu = new am4core.ExportMenu();
+*/
+
+// Zoom control
+chart.homeZoomLevel = 5;
+chart.maxZoomLevel = 1;
+/*
+chart.zoomControl = new am4maps.ZoomControl();
+*/
+/*
+var homeButton = new am4core.Button();
+homeButton.events.on("hit", function(){
+  chart.goHome();
+});
+
+homeButton.icon = new am4core.Sprite();
+homeButton.padding(7, 5, 7, 5);
+homeButton.width = 30;
+homeButton.icon.path = "M16,8 L14,8 L14,16 L10,16 L10,10 L6,10 L6,16 L2,16 L2,8 L0,8 L8,0 L16,8 Z M16,8";
+homeButton.marginBottom = 10;
+homeButton.parent = chart.zoomControl;
+homeButton.insertBefore(chart.zoomControl.plusButton);
+*/
+// Center on the groups by default
+
+/*
+chart.homeGeoPoint = { longitude: 10, latitude: 52 };
+*/
+function createSeries(info_name, name, include, color, hoverColor) {
+  var series = chart.series.push(new am4maps.MapPolygonSeries());
+  series.name = name;
+  series.info_name = info_name
+  series.useGeodata = true;
+  series.include = include;
+  series.fill = am4core.color(color);
+  series.events.on("over", over);
+  series.events.on("out", out);
+
+
+  series.mapPolygons.template.tooltipText = "[bold]{series.info_name}[/] : {series.name}";
+  series.mapPolygons.template.fill = am4core.color(color);
+
+  var hover = series.mapPolygons.template.states.create("highlight");
+  hover.properties.fill = am4core.color(hoverColor);
+
+  return series;
+}
+
+// première couleur "#FF4159", "#F58795"
+  var col1 = "#50514F";
+  var col1hov = "#8A8A8A";
+
+createSeries("Royaume-Uni", "51,59% des recherches", ["GB"], col1, col1hov);
+createSeries("Allemagne", "44,96% des recherches", ["DE"], col1, col1hov);
+
+// deuxième couleur "#FFA580", "#F9D0BF"
+  var col2 = "#F25F5C";
+  var col2hov = "#F59391";
+createSeries("Espagne", "39,05% des recherches", ["ES"], col2, col2hov);
+createSeries("Italie", "28,92% des recherches", ["IT"], col2, col2hov);
+createSeries("Autriche", "36,92% des recherches", ["AT"], col2, col2hov);
+createSeries("Pays-Bas", "29,73% des recherches", ["NL"], col2, col2hov);
+createSeries("Finlande", "34,75% des recherches", ["FI"], col2, col2hov);
+createSeries("Norvège", "29,5% des recherches", ["NO"], col2, col2hov);
+createSeries("Danemark", "25,11% des recherches", ["DK"], col2, col2hov);
+
+// troisième couleur "#E5DB8D", "#F1EBC1"
+  var col3 = "#FFE066";
+  var col3hov = "#FCEAA2";
+createSeries("Suède", "24,63% des recherches", ["SE"], col3, col3hov);
+createSeries("Roumanie", "21,19% des recherches", ["RO"], col3, col3hov);
+createSeries("Pologne", "23,32% des recherches", ["PL"], col3, col3hov);
+createSeries("France", "21,53% des recherches", ["FR"], col3, col3hov);
+createSeries("Irlande", "22,21% des recherches", ["IE"], col3, col3hov);
+
+// quatrième couleur "#A5CB97", "#D8F3CE"
+  var col4 = "#247BA0";
+  var col4hov = "#7CD0F3";
+createSeries("République tchèque", "17,88% des recherches", ["CZ"], col4, col4hov);
+createSeries("Grèce", "18,11% des recherches", ["GR"], col4, col4hov);
+createSeries("Portugal", "17,40% des recherches", ["PT"], col4, col4hov);
+createSeries("Slovénie", "13,82% des recherches", ["SI"], col4, col4hov);
+createSeries("Slovaquie", "13,51% des recherches", ["SK"], col4, col4hov);
+createSeries("Croatie", "11,82% des recherches", ["HR"], col4, col4hov);
+createSeries("Luxembourg", "10,53% des recherches", ["LU"], col4, col4hov);
+createSeries("Estonie", "10,13% des recherches", ["EE"], col4, col4hov);
+createSeries("Belgique", "13,38% des recherches", ["BE"], col4, col4hov);
+
+// cinquième couleur "#52BD97", "#A1ECD1"
+  var col5 = "#70C1B3";
+  var col5hov = "#BAF5EB";
+createSeries("Hongrie", "9,67% des recherches", ["HU"], col5, col5hov);
+createSeries("Lettonie", "8,36% des recherches", ["LV"], col5, col5hov);
+createSeries("Lituanie", "8,19% des recherches", ["LT"], col5, col5hov);
+createSeries("Bulgarie", "10,48% des recherches", ["BG"], col5, col5hov);
+
+//Unknown information
+createSeries("Chypre", "Pas d'information", ["CY"], "#D3D0D0", "#D3D0D0");
+createSeries("Malte", "Pas d'information", ["MT"], "#D3D0D0", "#D3D0D0");
+createSeries("Islande", "Pas d'information", ["IS"], "#D3D0D0", "#D3D0D0");
+createSeries("Serbie", "Pas d'information", ["RS"], "#D3D0D0", "#D3D0D0");
+createSeries("Bosnie", "Pas d'information", ["BA"], "#D3D0D0", "#D3D0D0");
+createSeries("Macédoine", "Pas d'information", ["MK"], "#D3D0D0", "#D3D0D0");
+createSeries("Ukraine", "Pas d'information", ["UA"], "#D3D0D0", "#D3D0D0");
+createSeries("Biélorussie", "Pas d'information", ["BY"], "#D3D0D0", "#D3D0D0");
+createSeries("Moldavie", "Pas d'information", ["MD"], "#D3D0D0", "#D3D0D0");
+createSeries("Suisse", "Pas d'information", ["CH"], "#D3D0D0", "#D3D0D0");
+createSeries("Turquie", "Pas d'information", ["TR"], "#D3D0D0", "#D3D0D0");
+createSeries("Kosovo", "Pas d'information", ["XK"], "#D3D0D0", "#D3D0D0");
+createSeries("Albanie", "Pas d'information", ["AL"], "#D3D0D0", "#D3D0D0");
+createSeries("Monténégro", "Pas d'information", ["ME"], "#D3D0D0", "#D3D0D0");
+
+
+
+
+
+function over(ev) {
+  ev.target.mapPolygons.each(function(polygon) {
+    polygon.setState("highlight");
+  });
+}
+
+function out(ev) {
+  ev.target.mapPolygons.each(function(polygon) {
+    polygon.setState("default");
+  });
+}
+
+
+var label = chart.createChild(am4core.Label);
+label.text = "Intérêt sur le sujet du Zéro Déchet (d'après Google Trend)";
+label.fontFamily = 'Noto Serif TC';
+label.fontSize = 13;
+//label.align = "center";
+//label.isMeasured = false;
+label.horizontalCenter = "middle";
+label.x = 250;
+label.y = 455;
+
+
+
+// This array will be populated with country IDs to exclude from the world series
+var excludedCountries = ["AQ"];
+
+// Create a series for each group, and populate the above array
+/*
+groupData.forEach(function(group) {
+  var series = chart.series.push(new am4maps.MapPolygonSeries());
+  series.name = group.name;
+  series.useGeodata = true;
+  var includedCountries = [];
+  group.data.forEach(function(country){
+    includedCountries.push(country.id);
+    excludedCountries.push(country.id);
+  });
+
+  series.include = includedCountries;
+
+  series.fill = am4core.color(group.color);
+
+  // By creating a hover state and setting setStateOnChildren to true, when we
+  // hover over the series itself, it will trigger the hover SpriteState of all
+  // its countries (provided those countries have a hover SpriteState, too!).
+  series.setStateOnChildren = true;
+  var seriesHoverState = series.states.create("hover");
+
+  // Country shape properties & behaviors
+  var mapPolygonTemplate = series.mapPolygons.template;
+  // Instead of our custom title, we could also use {name} which comes from geodata
+  mapPolygonTemplate.fill = am4core.color(group.color);
+  mapPolygonTemplate.fillOpacity = 0.8;
+  mapPolygonTemplate.nonScalingStroke = true;
+
+  // States
+  var hoverState = mapPolygonTemplate.states.create("hover");
+  //hoverState.properties.fill = am4core.color("#CC0000");
+
+
+
+  // Tooltip
+  mapPolygonTemplate.tooltipText = "{title} joined EU at {customData}"; // enables tooltip
+  // series.tooltip.getFillFromObject = false; // prevents default colorization, which would make all tooltips red on hover
+  // series.tooltip.background.fill = am4core.color(group.color);
+
+  // MapPolygonSeries will mutate the data assigned to it,
+  // we make and provide a copy of the original data array to leave it untouched.
+  // (This method of copying works only for simple objects, e.g. it will not work
+  //  as predictably for deep copying custom Classes.)
+  series.data = JSON.parse(JSON.stringify(group.data));
+});
+
+// The rest of the world.
+var worldSeries = chart.series.push(new am4maps.MapPolygonSeries());
+var worldSeriesName = "continentsRussiaEurope";
+worldSeries.name = worldSeriesName;
+worldSeries.useGeodata = true;
+worldSeries.exclude = excludedCountries;
+worldSeries.fillOpacity = 0.8;
+worldSeries.hiddenInLegend = true;
+worldSeries.mapPolygons.template.nonScalingStroke = true;
+*/
+// This auto-generates a legend according to each series' name and fill
+/*
+chart.legend = new am4maps.Legend();
+
+// Legend styles
+chart.legend.paddingLeft = 27;
+chart.legend.paddingRight = 27;
+chart.legend.marginBottom = 15;
+chart.legend.width = am4core.percent(90);
+chart.legend.valign = "bottom";
+chart.legend.contentAlign = "left";
+
+// Legend items
+chart.legend.itemContainers.template.interactionsEnabled = false;
+*/
+</script>
+
+<!-- ################################################################################################################################################# -->
+
+
+<!-- Resources -->
+<script src="amcharts4/core.js"></script>
+<script src="amcharts4/maps.js"></script>
+<script src="amcharts4/geodata/region/world/europeHigh.js"></script>
+<script src="amcharts4/themes/material.js"></script>
+<!-- Chart code -->
+<script>
+// Themes begin
+am4core.useTheme(am4themes_material);
+// Themes end
+
+// Create map instance
+var chart = am4core.create("chartdiv2", am4maps.MapChart);
+
+// Set map definition
+chart.geodata = am4geodata_region_world_europeHigh;
+
+// Set projection
+chart.projection = new am4maps.projections.Mercator();
+
+// Export
+/*
+chart.exporting.menu = new am4core.ExportMenu();
+*/
+
+// Zoom control
+chart.homeZoomLevel = 5;
+chart.maxZoomLevel = 1;
+/*
+chart.zoomControl = new am4maps.ZoomControl();
+*/
+/*
+var homeButton = new am4core.Button();
+homeButton.events.on("hit", function(){
+  chart.goHome();
+});
+
+homeButton.icon = new am4core.Sprite();
+homeButton.padding(7, 5, 7, 5);
+homeButton.width = 30;
+homeButton.icon.path = "M16,8 L14,8 L14,16 L10,16 L10,10 L6,10 L6,16 L2,16 L2,8 L0,8 L8,0 L16,8 Z M16,8";
+homeButton.marginBottom = 10;
+homeButton.parent = chart.zoomControl;
+homeButton.insertBefore(chart.zoomControl.plusButton);
+*/
+// Center on the groups by default
+
+/*
+chart.homeGeoPoint = { longitude: 10, latitude: 52 };
+*/
+function createSeries(info_name, name, include, color, hoverColor) {
+  var series = chart.series.push(new am4maps.MapPolygonSeries());
+  series.name = name;
+  series.info_name = info_name;
+  series.useGeodata = true;
+  series.include = include;
+  series.fill = am4core.color(color);
+  series.events.on("over", over);
+  series.events.on("out", out);
+
+
+  series.mapPolygons.template.tooltipText = "[bold]{series.info_name}[/] : {series.name}";
+  series.mapPolygons.template.fill = am4core.color(color);
+
+  var hover = series.mapPolygons.template.states.create("highlight");
+  hover.properties.fill = am4core.color(hoverColor);
+
+  return series;
+}
+
+//createSeries("Northern Europe", ["FI", "DK", "SE", "NO", "LT", "LV", "EE", "IS"], "#96BDC6", "#669DA6");
+//première couleur  "#FF4159", "#F58795"
+var col1bis = col1;
+var col1bishov = col1hov;
+createSeries("Luxembourg", "19452 kg/habitant", ["LU"], col1bis, col1bishov);
+createSeries("Finlande", "22830 kg/habitant", ["FI"], col1bis, col1bishov);
+
+//deuxième couleur  "#FFA580", "#F9D0BF"
+var col2bis = col2;
+var col2bishov = col2hov;
+createSeries("Suède", "13808 kg/habitant", ["SE"], col2bis, col2bishov);
+createSeries("Estonie", "15103 kg/habitant", ["EE"], col2bis, col2bishov);
+createSeries("Bulgarie", "16395 kg/habitant", ["BG"], col2bis, col2bishov);
+
+//troisième couleur  "#E5DB8D", "#F1EBC1"
+var col3bis = col3;
+var col3bishov = col3hov;
+createSeries("Islande", "3182 kg/habitant", ["IS"], col3bis, col3bishov);
+createSeries("Royaume-Uni", "3267 kg/habitant", ["GB"], col3bis, col3bishov);
+createSeries("Roumanie", "8917 kg/habitant", ["RO"], col3bis, col3bishov);
+createSeries("Pologne", "4293 kg/habitant", ["PL"], col3bis, col3bishov);
+createSeries("Autriche", "6871 kg/habitant", ["AT"], col3bis, col3bishov);
+createSeries("Pays-Bas", "8214 kg/habitant", ["NL"], col3bis, col3bishov);
+createSeries("Malte", "3234 kg/habitant", ["MT"], col3bis, col3bishov);
+createSeries("France", "4559 kg/habitant", ["FR"], col3bis, col3bishov);
+createSeries("Grèce", "6156 kg/habitant", ["GR"], col3bis, col3bishov);
+createSeries("Allemagne", "4653 kg/habitant", ["DE"], col3bis, col3bishov);
+createSeries("Danemark", "3328 kg/habitant", ["DK"], col3bis, col3bishov);
+createSeries("Belgique", "3839 kg/habitant", ["BE"], col3bis, col3bishov);
+
+// quatrième couleur  "#A5CB97", "#D8F3CE"
+var col4bis = col4;
+var col4bishov = col4hov;
+createSeries("République tchèque kg/habitant", "2169", ["CZ"], col4bis, col4bishov);
+createSeries("Irlande", "2475 kg/habitant", ["IE"], col4bis, col4bishov);
+createSeries("Espagne", "2296 kg/habitant", ["ES"], col4bis, col4bishov);
+createSeries("Italie", "2244 kg/habitant", ["IT"], col4bis, col4bishov);
+createSeries("Chypre", "2294 kg/habitant", ["CY"], col4bis, col4bishov);
+createSeries("Slovénie", "2329 kg/habitant", ["SI"], col4bis, col4bishov);
+createSeries("Norvège", "2107 kg/habitant", ["NO"], col4bis, col4bishov);
+
+//cinquième couleur "#52BD97", "#A1ECD1"
+var col5bis = col5;
+var col5bishov = col5hov;
+createSeries("Hongrie", "1422 kg/habitant", ["HU"], col5bis, col5bishov);
+createSeries("Slovaquie", "1459 kg/habitant", ["SK"], col5bis, col5bishov);
+createSeries("Croatie", "883 kg/habitant", ["HR"], col5bis, col5bishov);
+createSeries("Portugal", "936 kg/habitant", ["PT"], col5bis, col5bishov);
+createSeries("Lettonie", "937 kg/habitant", ["LV"], col5bis, col5bishov);
+createSeries("Lituanie", "1677 kg/habitant", ["LT"], col5bis, col5bishov);
+
+//Unknown information  "#D3D0D0", "#D3D0D0"
+createSeries("Serbie", "Pas d'information", ["RS"], "#D3D0D0", "#D3D0D0");
+createSeries("Bosnie", "Pas d'information", ["BA"], "#D3D0D0", "#D3D0D0");
+createSeries("Macédoine", "Pas d'information", ["MK"], "#D3D0D0", "#D3D0D0");
+createSeries("Ukraine", "Pas d'information", ["UA"], "#D3D0D0", "#D3D0D0");
+createSeries("Biélorussie", "Pas d'information", ["BY"], "#D3D0D0", "#D3D0D0");
+createSeries("Moldavie", "Pas d'information", ["MD"], "#D3D0D0", "#D3D0D0");
+createSeries("Suisse", "Pas d'information", ["CH"], "#D3D0D0", "#D3D0D0");
+createSeries("Turquie", "Pas d'information", ["TR"], "#D3D0D0", "#D3D0D0");
+createSeries("Kosovo", "Pas d'information", ["XK"], "#D3D0D0", "#D3D0D0");
+createSeries("Albanie", "Pas d'information", ["AL"], "#D3D0D0", "#D3D0D0");
+createSeries("Monténégro", "Pas d'information", ["ME"], "#D3D0D0", "#D3D0D0");
+
+
+
+
+
+function over(ev) {
+  ev.target.mapPolygons.each(function(polygon) {
+    polygon.setState("highlight");
+  });
+}
+
+function out(ev) {
+  ev.target.mapPolygons.each(function(polygon) {
+    polygon.setState("default");
+  });
+}
+
+
+var label = chart.createChild(am4core.Label);
+label.text = "Masse de déchets produits par personne par année";
+label.fontFamily = 'Noto Serif TC';
+label.fontSize = 13;
+//label.align = "center";
+//label.horizontalCenter = "middle";
+label.x = 100;
+label.y = 455;
+
+
+// This array will be populated with country IDs to exclude from the world series
+var excludedCountries = ["AQ"];
+
+// Create a series for each group, and populate the above array
+/*
+groupData.forEach(function(group) {
+  var series = chart.series.push(new am4maps.MapPolygonSeries());
+  series.name = group.name;
+  series.useGeodata = true;
+  var includedCountries = [];
+  group.data.forEach(function(country){
+    includedCountries.push(country.id);
+    excludedCountries.push(country.id);
+  });
+
+  series.include = includedCountries;
+
+  series.fill = am4core.color(group.color);
+
+  // By creating a hover state and setting setStateOnChildren to true, when we
+  // hover over the series itself, it will trigger the hover SpriteState of all
+  // its countries (provided those countries have a hover SpriteState, too!).
+  series.setStateOnChildren = true;
+  var seriesHoverState = series.states.create("hover");
+
+  // Country shape properties & behaviors
+  var mapPolygonTemplate = series.mapPolygons.template;
+  // Instead of our custom title, we could also use {name} which comes from geodata
+  mapPolygonTemplate.fill = am4core.color(group.color);
+  mapPolygonTemplate.fillOpacity = 0.8;
+  mapPolygonTemplate.nonScalingStroke = true;
+
+  // States
+  var hoverState = mapPolygonTemplate.states.create("hover");
+  //hoverState.properties.fill = am4core.color("#CC0000");
+
+
+
+  // Tooltip
+  mapPolygonTemplate.tooltipText = "{title} joined EU at {customData}"; // enables tooltip
+  // series.tooltip.getFillFromObject = false; // prevents default colorization, which would make all tooltips red on hover
+  // series.tooltip.background.fill = am4core.color(group.color);
+
+  // MapPolygonSeries will mutate the data assigned to it,
+  // we make and provide a copy of the original data array to leave it untouched.
+  // (This method of copying works only for simple objects, e.g. it will not work
+  //  as predictably for deep copying custom Classes.)
+  series.data = JSON.parse(JSON.stringify(group.data));
+});
+
+// The rest of the world.
+var worldSeries = chart.series.push(new am4maps.MapPolygonSeries());
+var worldSeriesName = "continentsRussiaEurope";
+worldSeries.name = worldSeriesName;
+worldSeries.useGeodata = true;
+worldSeries.exclude = excludedCountries;
+worldSeries.fillOpacity = 0.8;
+worldSeries.hiddenInLegend = true;
+worldSeries.mapPolygons.template.nonScalingStroke = true;
+*/
+// This auto-generates a legend according to each series' name and fill
+/*
+chart.legend = new am4maps.Legend();
+
+// Legend styles
+chart.legend.paddingLeft = 27;
+chart.legend.paddingRight = 27;
+chart.legend.marginBottom = 15;
+chart.legend.width = am4core.percent(90);
+chart.legend.valign = "bottom";
+chart.legend.contentAlign = "left";
+
+// Legend items
+chart.legend.itemContainers.template.interactionsEnabled = false;
+*/
+</script>
+
+
+
+</html>
