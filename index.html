@@ -72,6 +72,7 @@
  background-color: #7d7bb9;
  margin-top:0;
  margin-bottom:0;
+ margin-left:5px;
 }
 
 .color-sample3 {
@@ -79,6 +80,7 @@
  width: 30px;
  height: 30px;
  background-color: #acadde;
+ margin-left:1px;
 }
 
 .color-sample4 {
@@ -86,37 +88,43 @@
  width: 30px;
  height: 30px;
  background-color: #dadaeb;
+ margin-right:5px;
 }
 
 .color-sample1bis {
  display: flex;
  width: 30px;
  height: 30px;
- background-color: #5f7d5f;
+ background-color:  #F5D1A6;
  margin-top: 30px;
+ margin-right:13px;
+ margin-left:50px;
 }
 
 .color-sample2bis {
  display: flex;
  width: 30px;
  height: 30px;
- background-color: #82aa82;
+ background-color: #E7905B;
  margin-top:0;
  margin-bottom:0;
+ margin-left:50px;
 }
 
 .color-sample3bis {
  display: flex;
  width: 30px;
  height: 30px;
- background-color: #adcead;
+ background-color: #E67229;
+ margin-left:50px;
 }
 
 .color-sample4bis {
  display: flex;
  width: 30px;
  height: 30px;
- background-color: #cddccd;
+ background-color: #B24805;
+ margin-left:50px;
 }
 
 .legende_text{
@@ -439,7 +447,7 @@
 				</div>
 				<!-- /Section header -->
 
-				<h4> Parler ou agir, quand les tendances ne reflètent pas nécessairement la réalité du terrain: </h4>
+				<p><b> Parler ou agir, quand les tendances ne reflètent pas nécessairement la réalité du terrain: </b></p>
 				<!--<p> Comment la France se positionne-t-elle par rapport à ces voisins européens?
 				Y a-t-il un effet d'entrainement entre l'intérêt que peuvent porter certains pays pour le "zero waste" et la réduction effective des déchets? Il semblerait que non...
       </p>-->
@@ -999,8 +1007,10 @@ function createSeries(info_name, name, include, color, hoverColor) {
 
 //createSeries("Northern Europe", ["FI", "DK", "SE", "NO", "LT", "LV", "EE", "IS"], "#96BDC6", "#669DA6");
 //première couleur  "#FF4159", "#F58795"
-var col1bis = "#5f7d5f";
-var col1bishov = "#87af87";
+// Victoire  #F5D1A6"/ #E7905B / #E67229/  #B24805
+// Sophie : "#5f7d5f";, "#87af87"; / "#82aa82";"#a0c8a0"; / "#adcead"; "#7b9c7b"; / "#cddccd";"#7d9691";
+var col1bis = "#F5D1A6";
+var col1bishov = "#F6E3CC";
 
 createSeries("Islande", "Rang: 1e - 1,285 kg/habitant", ["IS"], col1bis, col1bishov);
 createSeries("Danemark", "Rang: 2e - 608 kg/habitant", ["DK"], col1bis, col1bishov);
@@ -1010,8 +1020,8 @@ createSeries("Autriche", "Rang: 5e - 489 kg/habitant", ["AT"],  col1bis, col1bis
 createSeries("Portugal", "Rang: 6e - 474 kg/habitant", ["PT"],  col1bis, col1bishov);
 
 //deuxième couleur  "#FFA580", "#F9D0BF"
-var col2bis = "#82aa82";
-var col2bishov = "#a0c8a0";
+var col2bis = "#E7905B";
+var col2bishov = "#F6C5A8";
 
 createSeries("Espagne", "Rang: 7e ex-aequo - 467 kg/habitant", ["ES"],  col2bis, col2bishov);
 createSeries("Norvège", "Rang: 7e ex-aequo - 467 kg/habitant", ["NO"],  col2bis, col2bishov);
@@ -1026,8 +1036,8 @@ createSeries("Royaume-Uni", "Rang: 16e - 416 kg/habitant", ["GB"],  col2bis, col
 createSeries("Grèce", "Rang: 17e - 414 kg/habitant", ["GR"],  col2bis, col2bishov);
 
 //troisième couleur  "#E5DB8D", "#F1EBC1"
-var col3bis = "#adcead";
-var col3bishov = "#7b9c7b";
+var col3bis = "#E67229";
+var col3bishov = "#F09F6C";
 
 createSeries("Bulgarie", "Rang: 18e - 398 kg/habitant", ["BG"], col3bis, col3bishov);
 createSeries("Lituanie", "Rang: 19e - 390 kg/habitant", ["LT"], col3bis, col3bishov);
@@ -1041,8 +1051,8 @@ createSeries("Irlande", "Rang: 26e - 327 kg/habitant", ["IE"],col3bis, col3bisho
 createSeries("Finlande", "Rang: 27e - 326 kg/habitant", ["FI"], col3bis, col3bishov);
 
 // quatrième couleur  "#A5CB97", "#D8F3CE"
-var col4bis = "#cddccd";
-var col4bishov = "#7d9691";
+var col4bis = "#B24805";
+var col4bishov = "#E98344";
 
 createSeries("Slovénie", "Rang: 28e - 311 kg/habitant", ["SI"], col4bis, col4bishov);
 createSeries("Hongrie", "Rang: 29e - 296 kg/habitant", ["HU"], col4bis, col4bishov);
