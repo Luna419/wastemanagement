@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -1148,3 +1149,1114 @@ chart.legend.itemContainers.template.interactionsEnabled = false;
 
 
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+.conteneur-global{
+  margin: 2rem; 0
+}
+.conteneur-cartes{
+  margin: 2rem 0.4rem;
+  display: flex;
+  justify-content: space-around;
+  /*border: 4px solid #52BD97;
+  box-shadow: -1px 16px 26px 4px rgba(188,188,188,0.99);*/
+}
+.conteneur-cartes2{
+  margin: 2rem 0.4rem;
+  display: flex;
+  justify-content: space-around;
+  /*border: 4px solid #52BD97;
+  box-shadow: -1px 16px 26px 4px rgba(188,188,188,0.99);*/
+  padding:20px;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.color-sample1 {
+ display: flex;
+ width: 30px;
+ height: 30px;
+ background-color: #4c4799;
+ margin-top: 30px;
+}
+.color-sample2 {
+ display: flex;
+ width: 30px;
+ height: 30px;
+ background-color: #7d7bb9;
+ margin-top:0;
+ margin-bottom:0;
+}
+.color-sample3 {
+ display: flex;
+ width: 30px;
+ height: 30px;
+ background-color: #acadde;
+}
+.color-sample4 {
+ display: flex;
+ width: 30px;
+ height: 30px;
+ background-color: #dadaeb;
+}
+	
+.color-sample1bis {
+ display: flex;
+ width: 30px;
+ height: 30px;
+ background-color: #5f7d5f;
+ margin-top: 30px;
+}
+.color-sample2bis {
+ display: flex;
+ width: 30px;
+ height: 30px;
+ background-color: #82aa82;
+ margin-top:0;
+ margin-bottom:0;
+}
+.color-sample3bis {
+ display: flex;
+ width: 30px;
+ height: 30px;
+ background-color: #adcead;
+}
+.color-sample4bis {
+ display: flex;
+ width: 30px;
+ height: 30px;
+ background-color: #cddccd;
+}
+	
+.legende_text{
+  display: flex;
+  justify-content: flex-end;
+}
+.texte{
+  font-family:"Noto Serif TC";
+  font-size:1.2rem;
+  text-align: right;
+  padding:0  0.5rem;
+}
+	
+.texte-droite{
+  text-align: left;
+}
+#chartdiv,
+#chartdiv2
+ {
+  width: 40%;
+  height: 500px;
+}
+#graph {
+  width: 50%;
+  /*border-width: 0 1px 0 1px;
+  border-style: solid;
+  border-color: #52BD97;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#text_div {
+  width: 50%;
+  /*border-width: 0 1px 0 1px;
+  border-style: solid;
+  border-color: #52BD97;*/
+  display: flex;
+  flex-direction: column;
+  vertical-align:top;
+  padding:20px;
+  }
+ 
+#graphProd {
+  width: 100%;
+  /*border-width: 0 1px 0 1px;
+  border-style: solid;
+  border-color: #52BD97;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#graph img {
+  width: 100%;
+}
+#legend_maps {
+  width: 35%;
+  /*border-width: 0 1px 0 1px;
+  border-style: solid;
+  border-color: #52BD97;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: space-around;*/
+  margin-top:500;
+}
+#legend_maps img {
+  width: 100%;
+}
+#clear {
+    clear: both;
+}
+</style>
+	
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC" rel="stylesheet">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Prévention des Déchets</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Owl Carousel -->
+	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+
+	<!-- Magnific Popup -->
+	<link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Header -->
+	<header id="home">
+		<!-- Background Image -->
+		<div class="bg-img" style="background-image: url('./img/waste.gif');">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image -->
+
+		<!-- Nav -->
+		<nav id="nav" class="navbar nav-transparent">
+			<div class="container">
+
+				<div class="navbar-header">
+					<!-- Logo -->
+					<div class="navbar-brand">
+						<a href="index.html">
+							<img class="logo" src="img/ensae.jpg" alt="ensae">
+							<img class="logo-alt" src="img/ensae_alt.png" alt="logo">
+						</a>
+					</div>
+					<!-- /Logo -->
+
+					<!-- Collapse nav button -->
+					<div class="nav-collapse">
+						<span></span>
+					</div>
+					<!-- /Collapse nav button -->
+				</div>
+
+				<!--  Main navigation  -->
+				<ul class="main-nav nav navbar-nav navbar-right">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#france">France</a></li>
+					<li><a href="#europe">Europe</a></li>
+					<li><a href="#about">About</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- /Main navigation -->
+
+			</div>
+		</nav>
+		<!-- /Nav -->
+
+		<!-- home wrapper -->
+		<div class="home-wrapper">
+			<div class="container">
+				<div class="row">
+
+					<!-- home content -->
+					<div class="col-md-10 col-md-offset-1">
+						<div class="home-content">
+							<h1 class="white-text">Projet Datastorytelling</h1>
+							<h3 class="white-text"> "Les meilleurs déchets sont ceux que nous ne produisons pas" </h3>
+							<p class="white-text">
+								Face à la lente prise de conscience de la menace que représentent nos déchets pour la biodiversité, le sujet de leur gestion est de plus en plus médiatisé. 
+								Après la vague d’incitation au tri sélectif, la tendance du “zéro déchet” a peu à peu fait son chemin. 
+								Contrairement aux méthodes de traitement des déchets (recyclage, valorisation énergétique etc.), la prévention des déchets vise à éviter la production-même de déchets, et non plus à seulement en réduire l’impact une fois produit. 
+								<br/><br/>
+								Développement de l’économie circulaire, simples astuces pour faire tenir ses déchets annuels dans une jarre, hausse des ventes en vrac pour réduire les emballages.., nombreuses sont les solutions apportées par les études nationales et autres articles journalistiques pour responsabiliser les individus et la société. 
+								Mais ont-elles vraiment l'impact escompté ? <br/>
+								Sur le sujet, ne serait-il pas enfin temps de joindre l’acte à la parole? 
+							</p>
+						</div>
+					</div>
+					<!-- /home content -->
+
+				</div>
+			</div>
+		</div>
+		<!-- /home wrapper -->
+
+	</header>
+	<!-- /Header -->
+
+
+
+	<!-- Partie 1: France -->
+	<div id="france" class="section md-padding bg-grey">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">Situation française</h2>
+				</div>
+				<!-- /Section header -->
+
+				<p> <br/>   Le Zéro Déchets, maintenant tout le monde connaît en France. Il y a une prise de conscience depuis quelques années, et le mouvement Zero Waste décolle à plein de niveaux : 
+								celui des individus (qui changent leurs modes de vie pour produire zéro déchets), 
+								celui des acteurs publics (avec les territoires Zero Waste), 
+								et même celui des entreprises, qui viennent avec plein de nouvelles initiatives zéro déchets 
+
+								C’est vrai qu’en même temps, on en parle partout sur internet : aujourd’hui c’est plus de 20% des recherches sur le sujet en France. Pas que sur internet d’ailleurs : on a regardé 3 des plus grands journaux français, et en 2016 ils avaient consacré 61 articles au Zéro déchets (en 2005 ça n’était que 8…). 
+
+								Bon donc du coup c’est bien, plus on en parle et moins on en produit des déchets non ? 
+
+								Aujourd’hui en France, on produit  29,193,619 tonnes de déchets ménagers par an, soit 437 kg/habitant, plus de SIX fois le poids du Français moyen. 
+								C’est vrai qu’en 2012 on avait atteint un sacré pic, on produisait 458kg/habitant. Donc c’est un peu mieux. Mais bon à l’époque on en parlait pas autant du zéro déchets. 
+								On en parle surtout depuis 2014. Et depuis 2014, nos déchets……..et bien ils augmentent ! 
+							    <br/> </p>
+				
+				<!-- France-évolution -->
+				<section class="conteneur-cartes2">
+					<div id = 'graph'>
+						<iframe title="Evolution de l'int&eacute;r&ecirc;t pour le &quot;Z&eacute;ro d&eacute;chet&quot;" aria-label="Interactive line chart" id="datawrapper-chart-GCtwj" src="//datawrapper.dwcdn.net/GCtwj/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important;" height="400">
+						</iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var t in a.data["datawrapper-height"]){var e=document.getElementById("datawrapper-chart-"+t);e&&(e.style.height=a.data["datawrapper-height"][t]+"px")}})}();</script>
+					</div>
+
+					<div id = 'graph'>
+						<iframe title="D&eacute;chets par habitant, France" aria-label="Interactive line chart" id="datawrapper-chart-nVxI7" src="//datawrapper.dwcdn.net/nVxI7/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important;" height="400"></iframe>
+						<script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var t in a.data["datawrapper-height"]){var e=document.getElementById("datawrapper-chart-"+t);e&&(e.style.height=a.data["datawrapper-height"][t]+"px")}})}();</script>
+					</div>
+				</section>
+				<!-- /France-évolution -->
+	
+		
+				<p> <br/> <b> Evènements à mentionner participant à la prise de conscience [A METTRE EN FORME] </b> <br/>
+					<b> L’impact de la COP21 en France:  </b> 
+					La France se retrouve en 10 ème position des pays européens les plus intéressés par le sujet du ZD malgré un taux de recherches sur Google environ 3 fois moins important que celui de la Slovénie. 
+					L’intérêt de la France pour ce sujet reste faible malgré un intérêt récemment plus prononcé qui permet de mettre en valeur une certaine influence de l’actualité sur l’intérêt que porte les français au ZD. 
+					En effet, on remarque sur le graphe un pic important d’intérêt au moment de la COP21 fin 2015. De plus, on constate que cet événement a créé un choc permanent sur l’intérêt des français face au ZD puisque la tendance n’est pas revenu à son niveau pré-COP21.
+					<br/>	
+					La publication du “Programme national de prévention des déchets 2014-2020” early 2014 (voir: https://www.ecologique-solidaire.gouv.fr/sites/default/files/Programme_national_prevention_dechets_2014-2020.pdf);
+					<br/>
+					La directive européenne sur les déchets de 2008, obligeant la mise en place de programmes nationaux de prévention des déchets  - transposée en droit français en 2010 (création de la hiérarchisation du traitement des déchets, favorisant la prévention des déchets sur les autres traitements) 
+				</p>
+				
+				
+				<!-- Graphes sur les journaux -->
+				<section class = "conteneur-cartes2">
+					<div id="graph">
+						<iframe title="Nombre d'articles mentionnant le &quot;z&eacute;ro d&eacute;chet&quot;" aria-label="Interactive area chart" id="datawrapper-chart-ieAuw" src="//datawrapper.dwcdn.net/ieAuw/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important;" height="300"></iframe>
+						<script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var t in a.data["datawrapper-height"]){var e=document.getElementById("datawrapper-chart-"+t);e&&(e.style.height=a.data["datawrapper-height"][t]+"px")}})}();</script>
+					</div>
+					<div id='text_div'>
+						<p> Sujet évoqué dans les quotidiens nationaux de tous bords politiques. Le débat n'est pas partisan </p>
+					</div>
+				</section>
+					
+				
+				<section class="conteneur-cartes">
+				    	<div id='graph'>
+				      		<img src="graph1.png"></img>
+					</div>
+				
+					<div id='graph'>
+				      		<img src="graph2.png"></img>
+				    	</div>
+				</section> 
+			
+				<!-- /Graphes sur les journaux -->
+
+							
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Partie 1: France -->
+
+
+
+	<!-- Partie 2: Europe -->
+	<div id="europe" class="section md-padding bg-grey">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">Situation Européenne</h2>
+				</div>
+				<!-- /Section header -->
+				
+				<h4> Parler ou agir, quand les tendances ne reflètent pas nécessairement la réalité du terrain: </h4>
+				<p> Comment la France se positionne-t-elle par rapport à ces voisins européens? 
+				Y a-t-il un effet d'entrainement entre l'intérêt que peuvent porter certains pays pour le "zero waste" et la réduction effective des déchets? Il semblerait que non...
+				</p>
+
+
+	<!-- Cartes -->	
+	<section class="conteneur-cartes">
+		<div id="chartdiv"></div>
+			
+	        <div id='legend_maps'>
+		    
+			<div class="legende_text flex">
+				<div class="color-sample1"></div>
+				<div class="texte texte-droite"> > 35% </div>
+			</div>
+
+			<div class="legende_text flex">
+				<div class="color-sample2"></div>
+				<div class="texte texte-droite"> 15-35%</div>
+              		</div>
+
+              		<div class="legende_text flex">
+                		<div class="color-sample3"></div>
+				<div class="texte texte-droite"> 5-15% </div>
+              		</div>
+
+			<div class="legende_text flex">
+                		<div class="color-sample4"></div>
+		                <div class="texte texte-droite"> 0-5%  </div>
+			</div>
+			
+			<div class="legende_text flex">
+            			<div class="texte texte-droite"> en % des recherches maximales </div>
+			</div>
+			
+			<br/>
+			
+			<div class="legende_text flex">
+				<div class="color-sample1bis"></div>
+				<div class="texte texte-droite"> > 470 kg/hab.  </div>
+			</div>
+
+			<div class="legende_text flex">
+				<div class="color-sample2bis"></div>
+				<div class="texte texte-droite"> 400-470 kg/hab.</div>
+              		</div>
+
+              		<div class="legende_text flex">
+                		<div class="color-sample3bis"></div>
+				<div class="texte texte-droite"> 325-400 kg/hab.</div>
+              		</div>
+
+			<div class="legende_text flex">
+                		<div class="color-sample4bis"></div>
+				<div class="texte texte-droite"> 150-325 kg/hab.</div>
+              		</div>
+	     		
+	        </div>
+		
+		<div id="chartdiv2"></div>
+	</section>
+	<!-- /Cartes -->
+				
+				
+	<section class="conteneur-cartes2">
+		<div id='text_div'>
+			<p> <b>Top 5 des pays européens les plus intéressés par le zéro déchet : Slovénie, Autriche, Tchéquie, Irlande, Belgique <br/></b>
+				<br/>La Slovénie semble être le pays avec le plus grand intérêt pour les termes « zéro déchet » suivie par l’Autriche, la République Tchèque, l’Irlande et la Belgique. L’Islande, le pays le plus pollueur (en terme de kg/habitant) fait parti des pays qui se sentent le moins concernés par le sujet « zéros déchets ». Il est intéressant de remarquer que les trois pays les plus intéressés par le « Zéro Déchet » sont mitoyens (Slovénie, Autriche, Tchéquie). <br/>
+			
+				<br/><b>Les pays européens les moins intéressés par le zéro déchet : Estonie, Chypre, Lettonie, Luxembourg, Malte, Islande, Monténégro, Macédoine, Albanie, Serbie, Bosnie, Kosovo </b> <br/>
+				<br/>On remarque que plusieurs pays moins « riches » semblent se sentir beaucoup plus concernés par le sujet du ZD (Slovénie, la Rép. Tchèque) et prennent le lead sur d’autres pays plus aisés comme le Royaume Uni, l’Allemagne ou la France. Cependant, dans la grande majorité, les pays moins développés semblent porter moins d’intérêt au ZD. Notons pour finir que le Luxembourg figure parmi les pays les moins intéressés par le ZD alors qu’il fait partie des pays les plus riche. <br/>
+			</p>
+		</div>
+						
+		<div id='text_div'>
+			<p> <b>Production des déchets en Europe en 2016 : la lourde responsabilité des industries  </b><br/>
+			<br/>En 2016, les ménages européens ont produit plus de 214 millions de tonnes de déchets, ajoutés à plus de 2,3 milliards de tonnes produits par les industries la même année. L’industrie est donc responsable de 90% de la production des déchets en 2016, ce qui représente plus de 10 fois la quantité de déchets générés par les ménages européens. La production totale des déchets (industrie + ménages) est relativement stable sur les 12 dernières années (2004-2016) malgré un intérêt en hausse pour les thématiques autour du  «zéro déchet ». 
+			</p>
+		</div>
+	</section>
+	
+
+	<div id='clear('></div>
+							
+	</section>				
+	
+	<section class="conteneur-cartes">
+		<div id='graph'>
+			<img src="Surprod.png"></img>
+		</div>
+	</section>
+
+	<h5>L’Islande, le mauvais élève de l’Europe</h5>
+	<p> Les ménages européens produisent en moyenne 420 kg de déchets/pers/an en 2016. Les industries quant à elles produisent l’équivalent de 4 542 kg de déchets /pers/an soit un total (ménages + indus) de 4962 kg/pers/an. Ce chiffre est en très légère baisse sur les dix dernières années mais reste très préoccupant.
+	Alors que les pays les plus pollueurs (en tonnes de déchets ménagers) sont l’Allemagne, l’Italie et la France (2016), on remarque qu’en terme de production de déchets/ habitant, l’Islande se présente comme le plus mauvais élève. En effet, en 2016, ce pays a produit 800 kg/habitant supplémentaire par rapport à la moyenne européenne, soit près de 4 fois plus que la France. A l’inverse, le Kosovo et la Roumanie sont les pays les moins pollueurs (en terme de kg/habitant). 
+	<br/><br/> </p>
+		
+	<h5> Taux de croissance à 10 ans: intérêt pour le Zero Waste vs. effets concrets sur la génération de déchets ? </h5>	
+	<p> La prise de conscience n’entraîne pas nécessairement des effets, 
+		et l’intérêt manifeste pour la réduction des déchets est bien loin de se refléter dans les faits sur le long-terme...<br> 
+		</p>
+		
+	<section class="conteneur-cartes">
+		<div id='graph'>
+			<iframe title="Taux de croissance 2006-2016 (kg/hab)" aria-label="Bar Chart" id="datawrapper-chart-N9L1N" src="//datawrapper.dwcdn.net/N9L1N/6/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important;" height="882"></iframe>
+			<script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var t in a.data["datawrapper-height"]){var e=document.getElementById("datawrapper-chart-"+t);e&&(e.style.height=a.data["datawrapper-height"][t]+"px")}})}();</script>		</div>
+		</div>
+	</section>
+		
+	<p> <br/> Le taux de croissance cumulée sur 10 ans des déchets ménagers et l’intérêt pour le “zero waste” (mesuré par le nombre relatif de recherches Google) sont en grande partie dé-corrélés. 
+		Certains des pays avec la plus forte hausse ces dix dernières années font partie de ceux qui montrent le plus grand intérêt pour la question. 
+		Mais de la même manière, les pays ayant fourni le plus d’efforts de réduction (tels la Slovénie, ou l’Irlande) montrent également un fort intérêt pour le sujet. 
+		</br>
+	</p>
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Partie 2: Europe -->
+
+
+
+
+		<!-- About -->
+		<div id="about" class="section md-padding">
+
+			<!-- Container -->
+			<div class="container">
+
+				<!-- Row -->
+				<div class="row">
+
+					<!-- Section header -->
+					<div class="section-header text-center">
+						<h2 class="title">Welcome to Website</h2>
+					</div>
+					<!-- /Section header -->
+
+					<!-- about -->
+					<div class="col-md-4">
+						<div class="about">
+							<i class="fa fa-cogs"></i>
+							<h3>Fully Customizible</h3>
+							<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
+							<a href="#">Read more</a>
+						</div>
+					</div>
+					<!-- /about -->
+
+					<!-- about -->
+					<div class="col-md-4">
+						<div class="about">
+							<i class="fa fa-magic"></i>
+							<h3>Awesome Features</h3>
+							<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
+							<a href="#">Read more</a>
+						</div>
+					</div>
+					<!-- /about -->
+
+					<!-- about -->
+					<div class="col-md-4">
+						<div class="about">
+							<i class="fa fa-mobile"></i>
+							<h3>Fully Responsive</h3>
+							<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
+							<a href="#">Read more</a>
+						</div>
+					</div>
+					<!-- /about -->
+
+				</div>
+				<!-- /Row -->
+
+			</div>
+			<!-- /Container -->
+
+		</div>
+		<!-- /About -->
+
+
+
+
+
+
+	<!-- Contact -->
+	<div id="contact" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section-header -->
+				<div class="section-header text-center">
+					<h2 class="title">A propos</h2>
+				</div>
+				<!-- /Section-header -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-phone"></i>
+						<h3>Phone</h3>
+						<p>512-421-3940</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-envelope"></i>
+						<h3>Email</h3>
+						<p>email@support.com</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-map-marker"></i>
+						<h3>Address</h3>
+						<p>1739 Bubby Drive</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact form -->
+				<div class="col-md-8 col-md-offset-2">
+					<form class="contact-form">
+						<input type="text" class="input" placeholder="Name">
+						<input type="email" class="input" placeholder="Email">
+						<input type="text" class="input" placeholder="Subject">
+						<textarea class="input" placeholder="Message"></textarea>
+						<button class="main-btn">Send message</button>
+					</form>
+				</div>
+				<!-- /contact form -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Contact -->
+
+
+	<!-- Footer -->
+	<footer id="footer" class="sm-padding bg-dark">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<!-- footer logo -->
+					<div class="footer-logo">
+						<a href="index.html"><img src="img/ensae_alt.png" alt="logo"></a>
+					</div>
+					<!-- /footer logo -->
+
+					<!-- footer follow -->
+					<ul class="footer-follow">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+					</ul>
+					<!-- /footer follow -->
+
+					<!-- footer copyright -->
+					<div class="footer-copyright">
+						<p>Copyright © 2019. All Rights Reserved. Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+					</div>
+					<!-- /footer copyright -->
+
+				</div>
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</footer>
+	<!-- /Footer -->
+
+	<!-- Back to top -->
+	<div id="back-to-top"></div>
+	<!-- /Back to top -->
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="preloader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<!-- /Preloader -->
+
+	<!-- jQuery Plugins -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+
+
+<script src="amcharts4/core.js"></script>
+<script src="amcharts4/maps.js"></script>
+<script src="amcharts4/geodata/region/world/europeHigh.js"></script>
+<script src="amcharts4/themes/material.js"></script>
+
+
+<!-- Chart code -->
+<script>
+// Themes begin
+am4core.useTheme(am4themes_material);
+// Themes end
+// Create map instance
+var chart = am4core.create("chartdiv", am4maps.MapChart);
+// Set map definition
+chart.geodata = am4geodata_region_world_europeHigh;
+// Set projection
+chart.projection = new am4maps.projections.Mercator();
+// Export
+/*
+chart.exporting.menu = new am4core.ExportMenu();
+*/
+// Zoom control
+chart.homeZoomLevel = 5;
+chart.maxZoomLevel = 1;
+/*
+chart.zoomControl = new am4maps.ZoomControl();
+*/
+/*
+var homeButton = new am4core.Button();
+homeButton.events.on("hit", function(){
+  chart.goHome();
+});
+homeButton.icon = new am4core.Sprite();
+homeButton.padding(7, 5, 7, 5);
+homeButton.width = 30;
+homeButton.icon.path = "M16,8 L14,8 L14,16 L10,16 L10,10 L6,10 L6,16 L2,16 L2,8 L0,8 L8,0 L16,8 Z M16,8";
+homeButton.marginBottom = 10;
+homeButton.parent = chart.zoomControl;
+homeButton.insertBefore(chart.zoomControl.plusButton);
+*/
+// Center on the groups by default
+/*
+chart.homeGeoPoint = { longitude: 10, latitude: 52 };
+*/
+	
+function createSeries(info_name, name, include, color, hoverColor) {
+  var series = chart.series.push(new am4maps.MapPolygonSeries());
+  series.name = name;
+  series.info_name = info_name
+  series.useGeodata = true;
+  series.include = include;
+  series.fill = am4core.color(color);
+  series.events.on("over", over);
+  series.events.on("out", out);
+  series.mapPolygons.template.tooltipText = "[bold]{series.info_name}[/] : \n {series.name}";
+  series.mapPolygons.template.fill = am4core.color(color);
+  var hover = series.mapPolygons.template.states.create("highlight");
+  hover.properties.fill = am4core.color(hoverColor);
+  return series;
+}
+// première couleur "#FF4159", "#F58795"
+	//  var col1 = "#50514F"; var col1hov = "#8A8A8A";
+	var col1 = "#4c4799";
+	var col1hov = "#c4bffa";
+createSeries("Slovénie", "Rang: 1e - base 100", ["SI"], col1, col1hov);
+createSeries("Autriche", "Rang: 2e - 90% des recherches max", ["AT"], col1, col1hov);
+createSeries("République tchèque", "Rang: 3e - 65% des recherches max", ["CZ"], col1, col1hov);
+createSeries("Irlande", "Rang: 4e - 49% des recherches max", ["IE"], col1, col1hov);
+createSeries("Belgique", "Rang: 5e ex-aequo - 48% des recherches max", ["BE"], col1, col1hov);
+createSeries("Allemagne", "Rang: 5e ex-aequo - 48% des recherches max", ["DE"], col1, col1hov);
+createSeries("Royaume-Uni", "Rang: 7e - 45% des recherches max", ["GB"], col1, col1hov);
+createSeries("Finlande", "Rang: 8e - 42% des recherches max", ["FI"], col1, col1hov);
+createSeries("Danemark", "Rang: 9e - 39% des recherches max", ["DK"], col1, col1hov);
+	
+// deuxième couleur "#FFA580", "#F9D0BF"
+ 	var col2 = "#7d7bb9";
+	var col2hov = "#c4c2fa";
+  
+createSeries("France", "Rang: 10e - 33% des recherches max", ["FR"], col2, col2hov);
+createSeries("Norvège", "Rang: 11e - 32% des recherches max", ["NO"], col2, col2hov);
+createSeries("Suède", "Rang: 12e ex-aequo - 27% des recherches max", ["SE"], col2, col2hov);
+createSeries("Portugal", "Rang: 12e ex-aequo - 27% des recherches max", ["PT"], col2, col2hov);
+createSeries("Croatie", "Rang: 14e - 26% des recherches max", ["HR"], col2, col2hov);
+createSeries("Pays-Bas", "Rang: 15e - 25% des recherches max", ["NL"], col2, col2hov);
+createSeries("Lituanie", "Rang: 16e - 23% des recherches max", ["LT"], col2, col2hov);
+// troisième couleur "#E5DB8D", "#F1EBC1"
+  var col3 = "#acadde";
+  var col3hov = "#8080af";
+  
+createSeries("Roumanie", "Rang: 17e - 15% des recherches max", ["RO"], col3, col3hov);
+createSeries("Slovaquie", "Rang: 18e - 14% des recherches max", ["SK"], col3, col3hov);
+createSeries("Espagne", "Rang: 19e ex-aequo - 13% des recherches max", ["ES"], col3, col3hov);
+createSeries("Italie", "Rang: 19e ex-aequo - 13% des recherches max", ["IT"], col3, col3hov);
+createSeries("Grèce", "Rang: 20e - 10% des recherches max", ["GR"], col3, col3hov);
+createSeries("Pologne", "Rang: 21e - 8% des recherches max", ["PL"], col3, col3hov);
+createSeries("Bulgarie", "Rang: 22e - 7% des recherches max", ["BG"], col3, col3hov);
+createSeries("Hongrie", "Rang: 23e - 6% des recherches max", ["HU"], col3, col3hov);
+// quatrième couleur "#A5CB97", "#D8F3CE"
+  var col4 = "#dadaeb";
+  var col4hov = "#9494b9";
+createSeries("Turquie", "Rang: 24e - 2% des recherches max", ["TR"], col4, col4hov);
+createSeries("Estonie", "Rang: 25e et dernier - pas de recherche", ["EE"],  col4, col4hov);
+createSeries("Lettonie", "Rang: 25e et dernier - pas de recherche",["LV"], col4, col4hov);
+createSeries("Chypre", "Rang: 25e et dernier - pas de recherche", ["CY"],  col4, col4hov);
+createSeries("Malte", "Rang: 25e et dernier - pas de recherche", ["MT"], col4, col4hov);
+createSeries("Serbie", "Rang: 25e et dernier - pas de recherche", ["RS"], col4, col4hov);
+//Unknown information
+createSeries("Luxembourg","Pas d'information", ["LU"], "#D3D0D0", "#D3D0D0");
+createSeries("Islande", "Pas d'information", ["IS"], "#D3D0D0", "#D3D0D0");
+createSeries("Bosnie", "Pas d'information", ["BA"], "#D3D0D0", "#D3D0D0");
+createSeries("Macédoine", "Pas d'information", ["MK"], "#D3D0D0", "#D3D0D0");
+createSeries("Ukraine", "Pas d'information", ["UA"], "#D3D0D0", "#D3D0D0");
+createSeries("Biélorussie", "Pas d'information", ["BY"], "#D3D0D0", "#D3D0D0");
+createSeries("Moldavie", "Pas d'information", ["MD"], "#D3D0D0", "#D3D0D0");
+createSeries("Suisse", "Pas d'information", ["CH"], "#D3D0D0", "#D3D0D0");
+createSeries("Kosovo", "Pas d'information", ["XK"], "#D3D0D0", "#D3D0D0");
+createSeries("Albanie", "Pas d'information", ["AL"], "#D3D0D0", "#D3D0D0");
+createSeries("Monténégro", "Pas d'information", ["ME"], "#D3D0D0", "#D3D0D0");
+function over(ev) {
+  ev.target.mapPolygons.each(function(polygon) {
+    polygon.setState("highlight");
+  });
+}
+function out(ev) {
+  ev.target.mapPolygons.each(function(polygon) {
+    polygon.setState("default");
+  });
+}
+var label = chart.createChild(am4core.Label);
+label.text = "Intérêt pour le Zéro Déchet (taux de recherche)";
+label.fontFamily = 'Noto Serif TC';
+label.fontSize = 13;
+//label.align = "center";
+//label.isMeasured = false;
+label.horizontalCenter = "middle";
+label.x = 250;
+label.y = 455;
+// This array will be populated with country IDs to exclude from the world series
+var excludedCountries = ["AQ"];
+// Create a series for each group, and populate the above array
+/*
+groupData.forEach(function(group) {
+  var series = chart.series.push(new am4maps.MapPolygonSeries());
+  series.name = group.name;
+  series.useGeodata = true;
+  var includedCountries = [];
+  group.data.forEach(function(country){
+    includedCountries.push(country.id);
+    excludedCountries.push(country.id);
+  });
+  series.include = includedCountries;
+  series.fill = am4core.color(group.color);
+  // By creating a hover state and setting setStateOnChildren to true, when we
+  // hover over the series itself, it will trigger the hover SpriteState of all
+  // its countries (provided those countries have a hover SpriteState, too!).
+  series.setStateOnChildren = true;
+  var seriesHoverState = series.states.create("hover");
+  // Country shape properties & behaviors
+  var mapPolygonTemplate = series.mapPolygons.template;
+  // Instead of our custom title, we could also use {name} which comes from geodata
+  mapPolygonTemplate.fill = am4core.color(group.color);
+  mapPolygonTemplate.fillOpacity = 0.8;
+  mapPolygonTemplate.nonScalingStroke = true;
+  // States
+  var hoverState = mapPolygonTemplate.states.create("hover");
+  //hoverState.properties.fill = am4core.color("#CC0000");
+  // Tooltip
+  mapPolygonTemplate.tooltipText = "{title} joined EU at {customData}"; // enables tooltip
+  // series.tooltip.getFillFromObject = false; // prevents default colorization, which would make all tooltips red on hover
+  // series.tooltip.background.fill = am4core.color(group.color);
+  // MapPolygonSeries will mutate the data assigned to it,
+  // we make and provide a copy of the original data array to leave it untouched.
+  // (This method of copying works only for simple objects, e.g. it will not work
+  //  as predictably for deep copying custom Classes.)
+  series.data = JSON.parse(JSON.stringify(group.data));
+});
+// The rest of the world.
+var worldSeries = chart.series.push(new am4maps.MapPolygonSeries());
+var worldSeriesName = "continentsRussiaEurope";
+worldSeries.name = worldSeriesName;
+worldSeries.useGeodata = true;
+worldSeries.exclude = excludedCountries;
+worldSeries.fillOpacity = 0.8;
+worldSeries.hiddenInLegend = true;
+worldSeries.mapPolygons.template.nonScalingStroke = true;
+*/
+// This auto-generates a legend according to each series' name and fill
+/*
+chart.legend = new am4maps.Legend();
+// Legend styles
+chart.legend.paddingLeft = 27;
+chart.legend.paddingRight = 27;
+chart.legend.marginBottom = 15;
+chart.legend.width = am4core.percent(90);
+chart.legend.valign = "bottom";
+chart.legend.contentAlign = "left";
+// Legend items
+chart.legend.itemContainers.template.interactionsEnabled = false;
+*/
+</script>
+
+<!-- ################################################################################################################################################# -->
+
+
+<!-- Resources -->
+<script src="amcharts4/core.js"></script>
+<script src="amcharts4/maps.js"></script>
+<script src="amcharts4/geodata/region/world/europeHigh.js"></script>
+<script src="amcharts4/themes/material.js"></script>
+<!-- Chart code -->
+<script>
+// Themes begin
+am4core.useTheme(am4themes_material);
+// Themes end
+// Create map instance
+var chart = am4core.create("chartdiv2", am4maps.MapChart);
+// Set map definition
+chart.geodata = am4geodata_region_world_europeHigh;
+// Set projection
+chart.projection = new am4maps.projections.Mercator();
+// Export
+/*
+chart.exporting.menu = new am4core.ExportMenu();
+*/
+// Zoom control
+chart.homeZoomLevel = 5;
+chart.maxZoomLevel = 1;
+/*
+chart.zoomControl = new am4maps.ZoomControl();
+*/
+/*
+var homeButton = new am4core.Button();
+homeButton.events.on("hit", function(){
+  chart.goHome();
+});
+homeButton.icon = new am4core.Sprite();
+homeButton.padding(7, 5, 7, 5);
+homeButton.width = 30;
+homeButton.icon.path = "M16,8 L14,8 L14,16 L10,16 L10,10 L6,10 L6,16 L2,16 L2,8 L0,8 L8,0 L16,8 Z M16,8";
+homeButton.marginBottom = 10;
+homeButton.parent = chart.zoomControl;
+homeButton.insertBefore(chart.zoomControl.plusButton);
+*/
+// Center on the groups by default
+/*
+chart.homeGeoPoint = { longitude: 10, latitude: 52 };
+*/
+function createSeries(info_name, name, include, color, hoverColor) {
+  var series = chart.series.push(new am4maps.MapPolygonSeries());
+  series.name = name;
+  series.info_name = info_name;
+  series.useGeodata = true;
+  series.include = include;
+  series.fill = am4core.color(color);
+  series.events.on("over", over);
+  series.events.on("out", out);
+  series.mapPolygons.template.tooltipText = "[bold]{series.info_name}[/] : \n {series.name}";
+  series.mapPolygons.template.fill = am4core.color(color);
+  var hover = series.mapPolygons.template.states.create("highlight");
+  hover.properties.fill = am4core.color(hoverColor);
+  return series;
+}
+//createSeries("Northern Europe", ["FI", "DK", "SE", "NO", "LT", "LV", "EE", "IS"], "#96BDC6", "#669DA6");
+//première couleur  "#FF4159", "#F58795"
+var col1bis = "#5f7d5f";
+var col1bishov = "#87af87";
+createSeries("Islande", "Rang: 1e - 1,285 kg/habitant", ["IS"], col1bis, col1bishov);
+createSeries("Danemark", "Rang: 2e - 608 kg/habitant", ["DK"], col1bis, col1bishov);
+createSeries("Pays-Bas", "Rang: 3e - 502 kg/habitant", ["NL"], col1bis, col1bishov);
+createSeries("Italie", "Rang: 4e - 497 kg/habitant", ["IT"], col1bis, col1bishov);
+createSeries("Autriche", "Rang: 5e - 489 kg/habitant", ["AT"],  col1bis, col1bishov);
+createSeries("Portugal", "Rang: 6e - 474 kg/habitant", ["PT"],  col1bis, col1bishov);
+	
+//deuxième couleur  "#FFA580", "#F9D0BF"
+var col2bis = "#82aa82";
+var col2bishov = "#a0c8a0";
+createSeries("Espagne", "Rang: 7e ex-aequo - 467 kg/habitant", ["ES"],  col2bis, col2bishov);
+createSeries("Norvège", "Rang: 7e ex-aequo - 467 kg/habitant", ["NO"],  col2bis, col2bishov);
+createSeries("Chypre", "Rang: 9e - 464 kg/habitant", ["CY"],  col2bis, col2bishov);
+createSeries("Allemagne", "Rang: 10e - 454 kg/habitant", ["DE"],  col2bis, col2bishov);
+createSeries("Belgique", "Rang: 11e ex-aequo - 445 kg/habitant", ["BE"],  col2bis, col2bishov);
+createSeries("Suède", "Rang: 11e ex-aequo - 445 kg/habitant", ["SE"],  col2bis, col2bishov);
+createSeries("Lettonie", "Rang: 13e - 444 kg/habitant", ["LV"],  col2bis, col2bishov);
+createSeries("France", "Rang: 14e ex-aequo - 437 kg/habitant", ["FR"],  col2bis, col2bishov);
+createSeries("Luxembourg", "Rang: 14e ex-aequo - 437 kg/habitant", ["LU"],  col2bis, col2bishov);
+createSeries("Royaume-Uni", "Rang: 16e - 416 kg/habitant", ["GB"],  col2bis, col2bishov);
+createSeries("Grèce", "Rang: 17e - 414 kg/habitant", ["GR"],  col2bis, col2bishov);
+//troisième couleur  "#E5DB8D", "#F1EBC1"
+var col3bis = "#adcead";
+var col3bishov = "#7b9c7b";
+createSeries("Bulgarie", "Rang: 18e - 398 kg/habitant", ["BG"], col3bis, col3bishov);
+createSeries("Lituanie", "Rang: 19e - 390 kg/habitant", ["LT"], col3bis, col3bishov);
+createSeries("Monténégro", "Rang: 20e - 365 kg/habitant", ["ME"], col3bis, col3bishov);
+createSeries("Malte", "Rang: 21e - 364 kg/habitant", ["MT"], col3bis, col3bishov);
+createSeries("Turquie", "Rang: 22e - 353 kg/habitant", ["TR"], col3bis, col3bishov);
+createSeries("Slovaquie", "Rang: 23e - 348 kg/habitant", ["SK"], col3bis, col3bishov);
+createSeries("République tchèque","Rang: 24e - 339 kg/habitant",  ["CZ"], col3bis, col3bishov);
+createSeries("Estonie", "Rang: 25e - 327 kg/habitant", ["EE"], col3bis, col3bishov);
+createSeries("Irlande", "Rang: 26e - 327 kg/habitant", ["IE"],col3bis, col3bishov);
+createSeries("Finlande", "Rang: 27e - 326 kg/habitant", ["FI"], col3bis, col3bishov);
+// quatrième couleur  "#A5CB97", "#D8F3CE"
+var col4bis = "#cddccd";
+var col4bishov = "#7d9691";
+createSeries("Slovénie", "Rang: 28e - 311 kg/habitant", ["SI"], col4bis, col4bishov);
+createSeries("Hongrie", "Rang: 29e - 296 kg/habitant", ["HU"], col4bis, col4bishov);
+createSeries("Croatie", "Rang: 30e - 274 kg/habitant", ["HR"], col4bis, col4bishov);
+createSeries("Pologne", "Rang: 31e - 251 kg/habitant", ["PL"], col4bis, col4bishov);
+createSeries("Serbie", "Rang: 32e - 225 kg/habitant", ["RS"],  col4bis, col4bishov);
+createSeries("Roumanie", "Rang: 33e - 208 kg/habitant", ["RO"], col4bis, col4bishov);
+createSeries("Kosovo", "Rang: 34e - 180 kg/habitant", ["XK"],  col4bis, col4bishov);
+//Unknown information  "#D3D0D0", "#D3D0D0"
+createSeries("Bosnie", "Pas d'information", ["BA"], "#D3D0D0", "#D3D0D0");
+createSeries("Macédoine", "Pas d'information", ["MK"], "#D3D0D0", "#D3D0D0");
+createSeries("Ukraine", "Pas d'information", ["UA"], "#D3D0D0", "#D3D0D0");
+createSeries("Biélorussie", "Pas d'information", ["BY"], "#D3D0D0", "#D3D0D0");
+createSeries("Moldavie", "Pas d'information", ["MD"], "#D3D0D0", "#D3D0D0");
+createSeries("Suisse", "Pas d'information", ["CH"], "#D3D0D0", "#D3D0D0");
+createSeries("Albanie", "Pas d'information", ["AL"], "#D3D0D0", "#D3D0D0");
+function over(ev) {
+  ev.target.mapPolygons.each(function(polygon) {
+    polygon.setState("highlight");
+  });
+}
+function out(ev) {
+  ev.target.mapPolygons.each(function(polygon) {
+    polygon.setState("default");
+  });
+}
+var label = chart.createChild(am4core.Label);
+label.text = "Quantité annuelle de déchets par habitant";
+label.fontFamily = 'Noto Serif TC';
+label.fontSize = 13;
+//label.align = "center";
+//label.horizontalCenter = "middle";
+label.x = 100;
+label.y = 455;
+// This array will be populated with country IDs to exclude from the world series
+var excludedCountries = ["AQ"];
+// Create a series for each group, and populate the above array
+/*
+groupData.forEach(function(group) {
+  var series = chart.series.push(new am4maps.MapPolygonSeries());
+  series.name = group.name;
+  series.useGeodata = true;
+  var includedCountries = [];
+  group.data.forEach(function(country){
+    includedCountries.push(country.id);
+    excludedCountries.push(country.id);
+  });
+  series.include = includedCountries;
+  series.fill = am4core.color(group.color);
+  // By creating a hover state and setting setStateOnChildren to true, when we
+  // hover over the series itself, it will trigger the hover SpriteState of all
+  // its countries (provided those countries have a hover SpriteState, too!).
+  series.setStateOnChildren = true;
+  var seriesHoverState = series.states.create("hover");
+  // Country shape properties & behaviors
+  var mapPolygonTemplate = series.mapPolygons.template;
+  // Instead of our custom title, we could also use {name} which comes from geodata
+  mapPolygonTemplate.fill = am4core.color(group.color);
+  mapPolygonTemplate.fillOpacity = 0.8;
+  mapPolygonTemplate.nonScalingStroke = true;
+  // States
+  var hoverState = mapPolygonTemplate.states.create("hover");
+  //hoverState.properties.fill = am4core.color("#CC0000");
+  // Tooltip
+  mapPolygonTemplate.tooltipText = "{title} joined EU at {customData}"; // enables tooltip
+  // series.tooltip.getFillFromObject = false; // prevents default colorization, which would make all tooltips red on hover
+  // series.tooltip.background.fill = am4core.color(group.color);
+  // MapPolygonSeries will mutate the data assigned to it,
+  // we make and provide a copy of the original data array to leave it untouched.
+  // (This method of copying works only for simple objects, e.g. it will not work
+  //  as predictably for deep copying custom Classes.)
+  series.data = JSON.parse(JSON.stringify(group.data));
+});
+// The rest of the world.
+var worldSeries = chart.series.push(new am4maps.MapPolygonSeries());
+var worldSeriesName = "continentsRussiaEurope";
+worldSeries.name = worldSeriesName;
+worldSeries.useGeodata = true;
+worldSeries.exclude = excludedCountries;
+worldSeries.fillOpacity = 0.8;
+worldSeries.hiddenInLegend = true;
+worldSeries.mapPolygons.template.nonScalingStroke = true;
+*/
+// This auto-generates a legend according to each series' name and fill
+/*
+chart.legend = new am4maps.Legend();
+// Legend styles
+chart.legend.paddingLeft = 27;
+chart.legend.paddingRight = 27;
+chart.legend.marginBottom = 15;
+chart.legend.width = am4core.percent(90);
+chart.legend.valign = "bottom";
+chart.legend.contentAlign = "left";
+// Legend items
+chart.legend.itemContainers.template.interactionsEnabled = false;
+*/
+</script>
+
+
+
+</html>
+>>>>>>> 9ed88c09d2343f0a6417682180109ed016bf222b
