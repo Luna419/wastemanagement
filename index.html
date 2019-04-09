@@ -2,11 +2,9 @@
 <html lang="en">
 
 <style>
-
 .conteneur-global{
   margin: 2rem; 0
 }
-
 .conteneur-cartes{
   margin: 2rem 0.4rem;
   display: flex;
@@ -14,7 +12,6 @@
   /*border: 4px solid #52BD97;
   box-shadow: -1px 16px 26px 4px rgba(188,188,188,0.99);*/
 }
-
 .conteneur-cartes2{
   margin: 2rem 0.4rem;
   display: flex;
@@ -23,14 +20,11 @@
   box-shadow: -1px 16px 26px 4px rgba(188,188,188,0.99);*/
   padding:20px;
 }
-
-
 .flex{
   display: flex;
   justify-content: center;
   align-items: baseline;
 }
-
 .color-sample1 {
  display: flex;
  width: 30px;
@@ -38,7 +32,6 @@
  background-color: #4c4799;
  margin-top: 30px;
 }
-
 .color-sample2 {
  display: flex;
  width: 30px;
@@ -47,14 +40,12 @@
  margin-top:0;
  margin-bottom:0;
 }
-
 .color-sample3 {
  display: flex;
  width: 30px;
  height: 30px;
  background-color: #acadde;
 }
-
 .color-sample4 {
  display: flex;
  width: 30px;
@@ -69,7 +60,6 @@
  background-color: #5f7d5f;
  margin-top: 30px;
 }
-
 .color-sample2bis {
  display: flex;
  width: 30px;
@@ -78,14 +68,12 @@
  margin-top:0;
  margin-bottom:0;
 }
-
 .color-sample3bis {
  display: flex;
  width: 30px;
  height: 30px;
  background-color: #adcead;
 }
-
 .color-sample4bis {
  display: flex;
  width: 30px;
@@ -97,7 +85,6 @@
   display: flex;
   justify-content: flex-end;
 }
-
 .texte{
   font-family:"Noto Serif TC";
   font-size:1.2rem;
@@ -108,15 +95,12 @@
 .texte-droite{
   text-align: left;
 }
-
-
 #chartdiv,
 #chartdiv2
  {
   width: 40%;
   height: 500px;
 }
-
 #graph {
   width: 50%;
   /*border-width: 0 1px 0 1px;
@@ -127,7 +111,6 @@
   align-items: center;
   justify-content: space-around;
 }
-
 #text_div {
   width: 50%;
   /*border-width: 0 1px 0 1px;
@@ -149,11 +132,9 @@
   align-items: center;
   justify-content: space-around;
 }
-
 #graph img {
   width: 100%;
 }
-
 #legend_maps {
   width: 35%;
   /*border-width: 0 1px 0 1px;
@@ -165,17 +146,12 @@
   /*justify-content: space-around;*/
   margin-top:500;
 }
-
-
 #legend_maps img {
   width: 100%;
 }
-
 #clear {
     clear: both;
 }
-
-
 </style>
 	
 <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC" rel="stylesheet">
@@ -308,7 +284,19 @@
 				</div>
 				<!-- /Section header -->
 
-				<p> <br/> <b> [TEXTE VICTOIRE A INSERER] </b> <br/> </p>
+				<p> <br/>   Le Zéro Déchets, maintenant tout le monde connaît en France. Il y a une prise de conscience depuis quelques années, et le mouvement Zero Waste décolle à plein de niveaux : 
+								celui des individus (qui changent leurs modes de vie pour produire zéro déchets), 
+								celui des acteurs publics (avec les territoires Zero Waste), 
+								et même celui des entreprises, qui viennent avec plein de nouvelles initiatives zéro déchets 
+
+								C’est vrai qu’en même temps, on en parle partout sur internet : aujourd’hui c’est plus de 20% des recherches sur le sujet en France. Pas que sur internet d’ailleurs : on a regardé 3 des plus grands journaux français, et en 2016 ils avaient consacré 61 articles au Zéro déchets (en 2005 ça n’était que 8…). 
+
+								Bon donc du coup c’est bien, plus on en parle et moins on en produit des déchets non ? 
+
+								Aujourd’hui en France, on produit  29,193,619 tonnes de déchets ménagers par an, soit 437 kg/habitant, plus de SIX fois le poids du Français moyen. 
+								C’est vrai qu’en 2012 on avait atteint un sacré pic, on produisait 458kg/habitant. Donc c’est un peu mieux. Mais bon à l’époque on en parlait pas autant du zéro déchets. 
+								On en parle surtout depuis 2014. Et depuis 2014, nos déchets……..et bien ils augmentent ! 
+							    <br/> </p>
 				
 				<!-- France-évolution -->
 				<section class="conteneur-cartes2">
@@ -727,21 +715,16 @@
 // Themes begin
 am4core.useTheme(am4themes_material);
 // Themes end
-
 // Create map instance
 var chart = am4core.create("chartdiv", am4maps.MapChart);
-
 // Set map definition
 chart.geodata = am4geodata_region_world_europeHigh;
-
 // Set projection
 chart.projection = new am4maps.projections.Mercator();
-
 // Export
 /*
 chart.exporting.menu = new am4core.ExportMenu();
 */
-
 // Zoom control
 chart.homeZoomLevel = 5;
 chart.maxZoomLevel = 1;
@@ -753,7 +736,6 @@ var homeButton = new am4core.Button();
 homeButton.events.on("hit", function(){
   chart.goHome();
 });
-
 homeButton.icon = new am4core.Sprite();
 homeButton.padding(7, 5, 7, 5);
 homeButton.width = 30;
@@ -763,7 +745,6 @@ homeButton.parent = chart.zoomControl;
 homeButton.insertBefore(chart.zoomControl.plusButton);
 */
 // Center on the groups by default
-
 /*
 chart.homeGeoPoint = { longitude: 10, latitude: 52 };
 */
@@ -777,22 +758,16 @@ function createSeries(info_name, name, include, color, hoverColor) {
   series.fill = am4core.color(color);
   series.events.on("over", over);
   series.events.on("out", out);
-
-
   series.mapPolygons.template.tooltipText = "[bold]{series.info_name}[/] : \n {series.name}";
   series.mapPolygons.template.fill = am4core.color(color);
-
   var hover = series.mapPolygons.template.states.create("highlight");
   hover.properties.fill = am4core.color(hoverColor);
-
   return series;
 }
-
 // première couleur "#FF4159", "#F58795"
 	//  var col1 = "#50514F"; var col1hov = "#8A8A8A";
 	var col1 = "#4c4799";
 	var col1hov = "#c4bffa";
-
 createSeries("Slovénie", "Rang: 1e - base 100", ["SI"], col1, col1hov);
 createSeries("Autriche", "Rang: 2e - 90% des recherches max", ["AT"], col1, col1hov);
 createSeries("République tchèque", "Rang: 3e - 65% des recherches max", ["CZ"], col1, col1hov);
@@ -814,8 +789,6 @@ createSeries("Portugal", "Rang: 12e ex-aequo - 27% des recherches max", ["PT"], 
 createSeries("Croatie", "Rang: 14e - 26% des recherches max", ["HR"], col2, col2hov);
 createSeries("Pays-Bas", "Rang: 15e - 25% des recherches max", ["NL"], col2, col2hov);
 createSeries("Lituanie", "Rang: 16e - 23% des recherches max", ["LT"], col2, col2hov);
-
-
 // troisième couleur "#E5DB8D", "#F1EBC1"
   var col3 = "#acadde";
   var col3hov = "#8080af";
@@ -828,19 +801,15 @@ createSeries("Grèce", "Rang: 20e - 10% des recherches max", ["GR"], col3, col3h
 createSeries("Pologne", "Rang: 21e - 8% des recherches max", ["PL"], col3, col3hov);
 createSeries("Bulgarie", "Rang: 22e - 7% des recherches max", ["BG"], col3, col3hov);
 createSeries("Hongrie", "Rang: 23e - 6% des recherches max", ["HU"], col3, col3hov);
-
 // quatrième couleur "#A5CB97", "#D8F3CE"
   var col4 = "#dadaeb";
   var col4hov = "#9494b9";
-
 createSeries("Turquie", "Rang: 24e - 2% des recherches max", ["TR"], col4, col4hov);
 createSeries("Estonie", "Rang: 25e et dernier - pas de recherche", ["EE"],  col4, col4hov);
 createSeries("Lettonie", "Rang: 25e et dernier - pas de recherche",["LV"], col4, col4hov);
 createSeries("Chypre", "Rang: 25e et dernier - pas de recherche", ["CY"],  col4, col4hov);
 createSeries("Malte", "Rang: 25e et dernier - pas de recherche", ["MT"], col4, col4hov);
 createSeries("Serbie", "Rang: 25e et dernier - pas de recherche", ["RS"], col4, col4hov);
-
-
 //Unknown information
 createSeries("Luxembourg","Pas d'information", ["LU"], "#D3D0D0", "#D3D0D0");
 createSeries("Islande", "Pas d'information", ["IS"], "#D3D0D0", "#D3D0D0");
@@ -853,24 +822,16 @@ createSeries("Suisse", "Pas d'information", ["CH"], "#D3D0D0", "#D3D0D0");
 createSeries("Kosovo", "Pas d'information", ["XK"], "#D3D0D0", "#D3D0D0");
 createSeries("Albanie", "Pas d'information", ["AL"], "#D3D0D0", "#D3D0D0");
 createSeries("Monténégro", "Pas d'information", ["ME"], "#D3D0D0", "#D3D0D0");
-
-
-
-
-
 function over(ev) {
   ev.target.mapPolygons.each(function(polygon) {
     polygon.setState("highlight");
   });
 }
-
 function out(ev) {
   ev.target.mapPolygons.each(function(polygon) {
     polygon.setState("default");
   });
 }
-
-
 var label = chart.createChild(am4core.Label);
 label.text = "Intérêt pour le Zéro Déchet (taux de recherche)";
 label.fontFamily = 'Noto Serif TC';
@@ -880,12 +841,8 @@ label.fontSize = 13;
 label.horizontalCenter = "middle";
 label.x = 250;
 label.y = 455;
-
-
-
 // This array will be populated with country IDs to exclude from the world series
 var excludedCountries = ["AQ"];
-
 // Create a series for each group, and populate the above array
 /*
 groupData.forEach(function(group) {
@@ -897,42 +854,32 @@ groupData.forEach(function(group) {
     includedCountries.push(country.id);
     excludedCountries.push(country.id);
   });
-
   series.include = includedCountries;
-
   series.fill = am4core.color(group.color);
-
   // By creating a hover state and setting setStateOnChildren to true, when we
   // hover over the series itself, it will trigger the hover SpriteState of all
   // its countries (provided those countries have a hover SpriteState, too!).
   series.setStateOnChildren = true;
   var seriesHoverState = series.states.create("hover");
-
   // Country shape properties & behaviors
   var mapPolygonTemplate = series.mapPolygons.template;
   // Instead of our custom title, we could also use {name} which comes from geodata
   mapPolygonTemplate.fill = am4core.color(group.color);
   mapPolygonTemplate.fillOpacity = 0.8;
   mapPolygonTemplate.nonScalingStroke = true;
-
   // States
   var hoverState = mapPolygonTemplate.states.create("hover");
   //hoverState.properties.fill = am4core.color("#CC0000");
-
-
-
   // Tooltip
   mapPolygonTemplate.tooltipText = "{title} joined EU at {customData}"; // enables tooltip
   // series.tooltip.getFillFromObject = false; // prevents default colorization, which would make all tooltips red on hover
   // series.tooltip.background.fill = am4core.color(group.color);
-
   // MapPolygonSeries will mutate the data assigned to it,
   // we make and provide a copy of the original data array to leave it untouched.
   // (This method of copying works only for simple objects, e.g. it will not work
   //  as predictably for deep copying custom Classes.)
   series.data = JSON.parse(JSON.stringify(group.data));
 });
-
 // The rest of the world.
 var worldSeries = chart.series.push(new am4maps.MapPolygonSeries());
 var worldSeriesName = "continentsRussiaEurope";
@@ -946,7 +893,6 @@ worldSeries.mapPolygons.template.nonScalingStroke = true;
 // This auto-generates a legend according to each series' name and fill
 /*
 chart.legend = new am4maps.Legend();
-
 // Legend styles
 chart.legend.paddingLeft = 27;
 chart.legend.paddingRight = 27;
@@ -954,7 +900,6 @@ chart.legend.marginBottom = 15;
 chart.legend.width = am4core.percent(90);
 chart.legend.valign = "bottom";
 chart.legend.contentAlign = "left";
-
 // Legend items
 chart.legend.itemContainers.template.interactionsEnabled = false;
 */
@@ -973,21 +918,16 @@ chart.legend.itemContainers.template.interactionsEnabled = false;
 // Themes begin
 am4core.useTheme(am4themes_material);
 // Themes end
-
 // Create map instance
 var chart = am4core.create("chartdiv2", am4maps.MapChart);
-
 // Set map definition
 chart.geodata = am4geodata_region_world_europeHigh;
-
 // Set projection
 chart.projection = new am4maps.projections.Mercator();
-
 // Export
 /*
 chart.exporting.menu = new am4core.ExportMenu();
 */
-
 // Zoom control
 chart.homeZoomLevel = 5;
 chart.maxZoomLevel = 1;
@@ -999,7 +939,6 @@ var homeButton = new am4core.Button();
 homeButton.events.on("hit", function(){
   chart.goHome();
 });
-
 homeButton.icon = new am4core.Sprite();
 homeButton.padding(7, 5, 7, 5);
 homeButton.width = 30;
@@ -1009,7 +948,6 @@ homeButton.parent = chart.zoomControl;
 homeButton.insertBefore(chart.zoomControl.plusButton);
 */
 // Center on the groups by default
-
 /*
 chart.homeGeoPoint = { longitude: 10, latitude: 52 };
 */
@@ -1022,22 +960,16 @@ function createSeries(info_name, name, include, color, hoverColor) {
   series.fill = am4core.color(color);
   series.events.on("over", over);
   series.events.on("out", out);
-
-
   series.mapPolygons.template.tooltipText = "[bold]{series.info_name}[/] : \n {series.name}";
   series.mapPolygons.template.fill = am4core.color(color);
-
   var hover = series.mapPolygons.template.states.create("highlight");
   hover.properties.fill = am4core.color(hoverColor);
-
   return series;
 }
-
 //createSeries("Northern Europe", ["FI", "DK", "SE", "NO", "LT", "LV", "EE", "IS"], "#96BDC6", "#669DA6");
 //première couleur  "#FF4159", "#F58795"
 var col1bis = "#5f7d5f";
 var col1bishov = "#87af87";
-
 createSeries("Islande", "Rang: 1e - 1,285 kg/habitant", ["IS"], col1bis, col1bishov);
 createSeries("Danemark", "Rang: 2e - 608 kg/habitant", ["DK"], col1bis, col1bishov);
 createSeries("Pays-Bas", "Rang: 3e - 502 kg/habitant", ["NL"], col1bis, col1bishov);
@@ -1048,7 +980,6 @@ createSeries("Portugal", "Rang: 6e - 474 kg/habitant", ["PT"],  col1bis, col1bis
 //deuxième couleur  "#FFA580", "#F9D0BF"
 var col2bis = "#82aa82";
 var col2bishov = "#a0c8a0";
-
 createSeries("Espagne", "Rang: 7e ex-aequo - 467 kg/habitant", ["ES"],  col2bis, col2bishov);
 createSeries("Norvège", "Rang: 7e ex-aequo - 467 kg/habitant", ["NO"],  col2bis, col2bishov);
 createSeries("Chypre", "Rang: 9e - 464 kg/habitant", ["CY"],  col2bis, col2bishov);
@@ -1060,11 +991,9 @@ createSeries("France", "Rang: 14e ex-aequo - 437 kg/habitant", ["FR"],  col2bis,
 createSeries("Luxembourg", "Rang: 14e ex-aequo - 437 kg/habitant", ["LU"],  col2bis, col2bishov);
 createSeries("Royaume-Uni", "Rang: 16e - 416 kg/habitant", ["GB"],  col2bis, col2bishov);
 createSeries("Grèce", "Rang: 17e - 414 kg/habitant", ["GR"],  col2bis, col2bishov);
-
 //troisième couleur  "#E5DB8D", "#F1EBC1"
 var col3bis = "#adcead";
 var col3bishov = "#7b9c7b";
-
 createSeries("Bulgarie", "Rang: 18e - 398 kg/habitant", ["BG"], col3bis, col3bishov);
 createSeries("Lituanie", "Rang: 19e - 390 kg/habitant", ["LT"], col3bis, col3bishov);
 createSeries("Monténégro", "Rang: 20e - 365 kg/habitant", ["ME"], col3bis, col3bishov);
@@ -1075,11 +1004,9 @@ createSeries("République tchèque","Rang: 24e - 339 kg/habitant",  ["CZ"], col3
 createSeries("Estonie", "Rang: 25e - 327 kg/habitant", ["EE"], col3bis, col3bishov);
 createSeries("Irlande", "Rang: 26e - 327 kg/habitant", ["IE"],col3bis, col3bishov);
 createSeries("Finlande", "Rang: 27e - 326 kg/habitant", ["FI"], col3bis, col3bishov);
-
 // quatrième couleur  "#A5CB97", "#D8F3CE"
 var col4bis = "#cddccd";
 var col4bishov = "#7d9691";
-
 createSeries("Slovénie", "Rang: 28e - 311 kg/habitant", ["SI"], col4bis, col4bishov);
 createSeries("Hongrie", "Rang: 29e - 296 kg/habitant", ["HU"], col4bis, col4bishov);
 createSeries("Croatie", "Rang: 30e - 274 kg/habitant", ["HR"], col4bis, col4bishov);
@@ -1087,8 +1014,6 @@ createSeries("Pologne", "Rang: 31e - 251 kg/habitant", ["PL"], col4bis, col4bish
 createSeries("Serbie", "Rang: 32e - 225 kg/habitant", ["RS"],  col4bis, col4bishov);
 createSeries("Roumanie", "Rang: 33e - 208 kg/habitant", ["RO"], col4bis, col4bishov);
 createSeries("Kosovo", "Rang: 34e - 180 kg/habitant", ["XK"],  col4bis, col4bishov);
-
-
 //Unknown information  "#D3D0D0", "#D3D0D0"
 createSeries("Bosnie", "Pas d'information", ["BA"], "#D3D0D0", "#D3D0D0");
 createSeries("Macédoine", "Pas d'information", ["MK"], "#D3D0D0", "#D3D0D0");
@@ -1097,22 +1022,16 @@ createSeries("Biélorussie", "Pas d'information", ["BY"], "#D3D0D0", "#D3D0D0");
 createSeries("Moldavie", "Pas d'information", ["MD"], "#D3D0D0", "#D3D0D0");
 createSeries("Suisse", "Pas d'information", ["CH"], "#D3D0D0", "#D3D0D0");
 createSeries("Albanie", "Pas d'information", ["AL"], "#D3D0D0", "#D3D0D0");
-
-
-
 function over(ev) {
   ev.target.mapPolygons.each(function(polygon) {
     polygon.setState("highlight");
   });
 }
-
 function out(ev) {
   ev.target.mapPolygons.each(function(polygon) {
     polygon.setState("default");
   });
 }
-
-
 var label = chart.createChild(am4core.Label);
 label.text = "Quantité annuelle de déchets par habitant";
 label.fontFamily = 'Noto Serif TC';
@@ -1121,11 +1040,8 @@ label.fontSize = 13;
 //label.horizontalCenter = "middle";
 label.x = 100;
 label.y = 455;
-
-
 // This array will be populated with country IDs to exclude from the world series
 var excludedCountries = ["AQ"];
-
 // Create a series for each group, and populate the above array
 /*
 groupData.forEach(function(group) {
@@ -1137,42 +1053,32 @@ groupData.forEach(function(group) {
     includedCountries.push(country.id);
     excludedCountries.push(country.id);
   });
-
   series.include = includedCountries;
-
   series.fill = am4core.color(group.color);
-
   // By creating a hover state and setting setStateOnChildren to true, when we
   // hover over the series itself, it will trigger the hover SpriteState of all
   // its countries (provided those countries have a hover SpriteState, too!).
   series.setStateOnChildren = true;
   var seriesHoverState = series.states.create("hover");
-
   // Country shape properties & behaviors
   var mapPolygonTemplate = series.mapPolygons.template;
   // Instead of our custom title, we could also use {name} which comes from geodata
   mapPolygonTemplate.fill = am4core.color(group.color);
   mapPolygonTemplate.fillOpacity = 0.8;
   mapPolygonTemplate.nonScalingStroke = true;
-
   // States
   var hoverState = mapPolygonTemplate.states.create("hover");
   //hoverState.properties.fill = am4core.color("#CC0000");
-
-
-
   // Tooltip
   mapPolygonTemplate.tooltipText = "{title} joined EU at {customData}"; // enables tooltip
   // series.tooltip.getFillFromObject = false; // prevents default colorization, which would make all tooltips red on hover
   // series.tooltip.background.fill = am4core.color(group.color);
-
   // MapPolygonSeries will mutate the data assigned to it,
   // we make and provide a copy of the original data array to leave it untouched.
   // (This method of copying works only for simple objects, e.g. it will not work
   //  as predictably for deep copying custom Classes.)
   series.data = JSON.parse(JSON.stringify(group.data));
 });
-
 // The rest of the world.
 var worldSeries = chart.series.push(new am4maps.MapPolygonSeries());
 var worldSeriesName = "continentsRussiaEurope";
@@ -1186,7 +1092,6 @@ worldSeries.mapPolygons.template.nonScalingStroke = true;
 // This auto-generates a legend according to each series' name and fill
 /*
 chart.legend = new am4maps.Legend();
-
 // Legend styles
 chart.legend.paddingLeft = 27;
 chart.legend.paddingRight = 27;
@@ -1194,7 +1099,6 @@ chart.legend.marginBottom = 15;
 chart.legend.width = am4core.percent(90);
 chart.legend.valign = "bottom";
 chart.legend.contentAlign = "left";
-
 // Legend items
 chart.legend.itemContainers.template.interactionsEnabled = false;
 */
